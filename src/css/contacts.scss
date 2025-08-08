@@ -8,7 +8,11 @@ $primary-color   : #FF512F;
 $secondary-color : #333;
 $form-bg         : #fff;
 
-
+// Dark mode colors
+$dark-bg         : #1a1a1a;
+$dark-text       : #e0e0e0;
+$dark-input-bg   : #2d2d2d;
+$dark-border     : #404040;
 
 //contact form
 .contact-page .contact-form{
@@ -72,9 +76,6 @@ $form-bg         : #fff;
             font-size: 18px;
             color: $secondary-color;
             width: 100%;
-            outline: none;
-        }
-        .form-control:focus{
             outline: none;
         }
 
@@ -188,6 +189,73 @@ $form-bg         : #fff;
         text-decoration: none;
         &:hover{
             text-decoration: underline;
+        }
+    }
+}
+
+//////////////////////////
+/*----Dark Mode Styles---*/
+//////////////////////////
+.darkmode .contact-page {
+    background: linear-gradient(to right, #1a1a1a, #2d2d2d);
+
+    h1 {
+        background-color: $dark-input-bg;
+        color: $dark-text;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+        small {
+            color: #b0b0b0;
+        }
+    }
+
+    .contact-form {
+        .input-block {
+            background-color: rgba(45, 45, 45, 0.9);
+            border-color: $dark-border;
+
+            &.focus {
+                background-color: $dark-input-bg;
+                border-color: $primary-color;
+            }
+
+            label {
+                color: $dark-text;
+            }
+
+            .form-control {
+                color: $dark-text;
+
+                &::placeholder {
+                    color: #888;
+                }
+            }
+
+            &.focus label {
+                color: $primary-color;
+            }
+        }
+
+        .square-button {
+            background-color: rgba(45, 45, 45, 0.9);
+            color: $primary-color;
+
+            &:hover,
+            &:focus {
+                background-color: $dark-input-bg;
+            }
+        }
+    }
+
+    .made-with-love {
+        color: $dark-text;
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                color: color.adjust($primary-color, $lightness: 10%);
+            }
         }
     }
 }
