@@ -1,151 +1,94 @@
 import React, { useState } from "react";
-import "../css/contacts.scss";
+import "../css/contacts.css";
 
 const Contacts = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
-    subject: "",
-    message: "",
+    message: ""
   });
 
-  const [focusedFields, setFocusedFields] = useState({});
+  const handleChange = (e) => {
+    setFormData({...formData, [e.target.name]: e.target.value})
+  }
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleFocus = (fieldName) => {
-    setFocusedFields((prev) => ({
-      ...prev,
-      [fieldName]: true,
-    }));
-  };
-
-  const handleBlur = (fieldName) => {
-    if (!formData[fieldName]) {
-      setFocusedFields((prev) => ({
-        ...prev,
-        [fieldName]: false,
-      }));
-    }
-  };
-
-  const getInputBlockClass = (fieldName) => {
-    return `input-block ${focusedFields[fieldName] || formData[fieldName] ? "focus" : ""}`;
-  };
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setFormData({name:"", email: "", message: ""})
+  }
 
   return (
-    <div className="contact-page">
-      <h1>
-        Responsive Material Design Form
-        <small>
-          Material Design delivers a cleaner and flatter user interface
-        </small>
-      </h1>
-      <section className="contact-wrap">
-        <form action="" className="contact-form">
-          <div className="col-sm-6">
-            <div className={getInputBlockClass("firstName")}>
-              <label htmlFor="firstName">First Name</label>
-              <input
-                type="text"
-                name="firstName"
-                id="firstName"
-                className="form-control"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                onFocus={() => handleFocus("firstName")}
-                onBlur={() => handleBlur("firstName")}
-              />
+    <section id="contact">
+
+      <h1 className="section-header">Contact</h1>
+
+      <div className="contact-wrapper">
+
+        {/*Left contact page*/}
+
+        <form id="contact-form" className="form-horizontal" onSubmit={handleSubmit} role="form">
+
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="text" className="form-control" id="name" placeholder="Nom" name="name" value={formData.name} onChange={handleChange} required/>
             </div>
           </div>
-          <div className="col-sm-6">
-            <div className={getInputBlockClass("lastName")}>
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                name="lastName"
-                id="lastName"
-                className="form-control"
-                value={formData.lastName}
-                onChange={handleInputChange}
-                onFocus={() => handleFocus("lastName")}
-                onBlur={() => handleBlur("lastName")}
-              />
+
+          <div className="form-group">
+            <div className="col-sm-12">
+              <input type="email" className="form-control" id="email" placeholder="Email" name="email" value={formData.email} onChange={handleChange}
+                required/>
             </div>
           </div>
-          <div className="col-sm-12">
-            <div className={getInputBlockClass("email")}>
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className="form-control"
-                value={formData.email}
-                onChange={handleInputChange}
-                onFocus={() => handleFocus("email")}
-                onBlur={() => handleBlur("email")}
-              />
+
+          <textarea className="form-control" rows="10" placeholder="Votre message..." name="message" value={formData.message} onChange={handleChange} required></textarea>
+
+          <button className="btn btn-primary send-button" id="submit" type="submit" value="Envoyer">
+            <div className="alt-send-button">
+              <i className="fa fa-paper-plane"></i><span className="send-text">Envoyer</span>
             </div>
-          </div>
-          <div className="col-sm-12">
-            <div className={getInputBlockClass("subject")}>
-              <label htmlFor="subject">Message Subject</label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                className="form-control"
-                value={formData.subject}
-                onChange={handleInputChange}
-                onFocus={() => handleFocus("subject")}
-                onBlur={() => handleBlur("subject")}
-              />
-            </div>
-          </div>
-          <div className="col-sm-12">
-            <div className={`${getInputBlockClass("message")} textarea`}>
-              <label htmlFor="message">Drop your message here</label>
-              <textarea
-                rows="3"
-                name="message"
-                id="message"
-                className="form-control"
-                value={formData.message}
-                onChange={handleInputChange}
-                onFocus={() => handleFocus("message")}
-                onBlur={() => handleBlur("message")}
-              />
-            </div>
-          </div>
-          <div className="col-sm-12">
-            <button type="submit" className="square-button">
-              Send
-            </button>
-          </div>
+
+          </button>
+
         </form>
-      </section>
 
-      <div className="made-with-love">
-        Made with
-        <i>♥</i> by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://codepen.io/nikhil8krishnan"
-        >
-          Nikhil Krishnan
-        </a>
+        {/*Left contact page*/}
+
+        <div className="direct-contact-container">
+
+          <ul className="contact-list">
+            <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Madagascar</span></i>
+            </li>
+
+            <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a
+              href="tel:+261300000000" title="Give me a call">+2613000000</a></span></i></li>
+
+            <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a
+              href="mailto:#" title="Send an email">madassistant13@gmail.com</a></span></i></li>
+
+          </ul>
+
+          <hr/>
+          <ul className="social-media-list">
+            <li><a href="https://web.facebook.com/profile.php?id=61576297390781&locale=fr_FR" target="_blank" rel="noopener noreferrer" className="contact-icon">
+              <i className="fa-brands fa-facebook"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/madassistant13/?utm_source=ig_web_button_share_sheet" target="_blank" className="contact-icon">
+              <i className="fa-brands fa-instagram"></i></a>
+            </li>
+            <li><a href="" target="_blank" className="contact-icon">
+              <i className="fa-brands fa-x-twitter"></i></a>
+            </li>
+          </ul>
+          <hr/>
+
+          <div className="copyright">&copy;2025 MadAssistant - Tous droits réservés</div>
+
+        </div>
+
       </div>
-    </div>
-  );
-};
 
-export default Contacts;
+    </section>
+  )
+}
+  export default Contacts;
