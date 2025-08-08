@@ -5,7 +5,7 @@ import DownloadIcon from "../assets/download-outline.svg";
 export default function Home() {
   return (
     <>
-      <main className="main">
+      <main className="main h-[100vh]">
         <section className="section banner banner-section" id="banner-section">
           <div className="container banner-column">
             <img
