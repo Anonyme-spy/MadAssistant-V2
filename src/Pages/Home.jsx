@@ -1,11 +1,13 @@
 import React from "react";
 import "../css/Hero.scss";
 import DownloadIcon from "../assets/download-outline.svg";
+import Contacts from "../Pages/Contacts.jsx";
+import Options from "../Pages/Options.jsx";
 
 export default function Home() {
   return (
     <>
-      <main className="main h-[100vh]">
+      <main className="main min-h-[100vh] flex flex-col justify-start scroll-auto">
         <section className="section banner banner-section" id="banner-section">
           <div className="container banner-column">
             <img
@@ -27,6 +29,12 @@ export default function Home() {
               </button>
             </div>
           </div>
+        </section>
+        <section className="section options-section" id="options-section">
+          <Options />
+        </section>
+        <section className="section contacts-section" id="contacts-section">
+          <Contacts />
         </section>
       </main>
     </>

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Contacts from "./Pages/Contacts.jsx";
+import Options from "./Pages/Options.jsx";
 
 function App() {
   return (
@@ -11,9 +12,6 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/option" element={<h1>About Page</h1>} />
-        <Route path="/avantages" element={<h1>Avantages Page</h1>} />
-        <Route path="/contacts" element={<Contacts />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
     </Router>
