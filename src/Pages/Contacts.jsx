@@ -61,10 +61,10 @@ const Contacts = () => {
             </li>
 
             <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a
-              href="tel:+261300000000" title="Give me a call">+2613000000</a></span></i></li>
+              href="tel:+261300000000" title="Nous appeler">+2613000000</a></span></i></li>
 
             <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a
-              href="mailto:#" title="Send an email">madassistant13@gmail.com</a></span></i></li>
+              href="mailto:#" title="Envoyer un email">madassistant13@gmail.com</a></span></i></li>
 
           </ul>
 
