@@ -5,3 +5,5 @@
 https://codepen.io/syahrizaldev/pen/eYrddze
 
 https://codepen.io/bobbykorec/pen/qOGbyr
+
+https://fontawesome.com/
