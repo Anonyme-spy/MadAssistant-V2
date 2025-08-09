@@ -1,8 +1,7 @@
-body {
+.contact-body {
     margin: 0;
-    padding: 0;
     background-color: #000;
-    padding-bottom: 100px;
+    padding: 0 0 100px;
 }
 
 #contact {

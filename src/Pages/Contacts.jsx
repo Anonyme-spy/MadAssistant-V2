@@ -18,7 +18,7 @@ const Contacts = () => {
 	}
 
 	return (
-		<section id="contact">
+		<section className="contact-body" id="contact">
 
 			<h1 className="section-header">Contact</h1>
 
@@ -94,7 +94,6 @@ const Contacts = () => {
 						</a>
 
 					</ul>
-					<hr/>
 
 					<div className="copyright">&copy;2025 MadAssistant - Tous droits réservés</div>
 
