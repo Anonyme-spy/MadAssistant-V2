@@ -1,7 +1,12 @@
 .contact-body {
     margin: 0;
-    background-color: #000;
+    background-color: var(--color-white-100);
     padding: 0 0 100px;
+    min-width: 100%;
+
+    html.darkmode & {
+        background-color: var(--color-black-400);
+    }
 }
 
 #contact {
@@ -14,83 +19,144 @@
     margin: 0 auto;
     padding: 40px 0;
     font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
+    color: var(--color-black-400);
     text-transform: uppercase;
     letter-spacing: 6px;
+
+    html.darkmode & {
+        color: var(--color-white-100);
+    }
 }
 
 .contact-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
     position: relative;
-    max-width: 840px;
+    max-width: 1200px;
+    width: 90%;
+    min-height: auto;
 }
 
 /* Left contact page */
 .form-horizontal {
-    /*float: left;*/
-    max-width: 400px;
+    max-width: 450px;
+    width: 100%;
     font-family: 'Lato';
     font-weight: 400;
+    flex-shrink: 0;
 }
 
 .form-control,
 textarea {
-    max-width: 400px;
-    background-color: #000;
-    color: #fff;
+    width: 100%;
+    background-color: var(--color-white-100);
+    color: var(--color-black-400);
     letter-spacing: 1px;
+    border: 1px solid var(--color-white-300);
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    html.darkmode & {
+        background-color: var(--color-black-300);
+        color: var(--color-white-100);
+        border-color: var(--color-black-200);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: var(--color-blue-500);
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    }
+
+    &::placeholder {
+        color: var(--color-white-400);
+
+        html.darkmode & {
+            color: var(--color-white-300);
+        }
+    }
 }
 
 .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
     overflow: hidden;
-    transition: all .2s ease-in-out;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: var(--color-blue-500);
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-blue-600);
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .alt-send-button {
-    width: 400px;
-    height: 34px;
-    transition: all .2s ease-in-out;
+    width: 100%;
+    height: 40px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
 }
 
 .send-text {
     display: block;
-    margin-top: 10px;
     font: 700 12px 'Lato', sans-serif;
     letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
+    color: var(--color-white-100);
 }
 
 /* Begin Right Contact Page */
 .direct-contact-container {
-    max-width: 400px;
+    max-width: 450px;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 /* Location, Phone, Email Section */
 .contact-list {
     list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .list-item {
     line-height: 4;
-    color: #aaa;
+    color: var(--color-white-400);
+    margin-bottom: 15px;
+
+    html.darkmode & {
+        color: var(--color-white-300);
+    }
 }
 
 .contact-text {
     font: 300 18px 'Lato', sans-serif;
     letter-spacing: 1.9px;
-    color: #bbb;
+    color: var(--color-black-300);
+
+    html.darkmode & {
+        color: var(--color-white-200);
+    }
 }
 
 .place {
@@ -106,16 +172,19 @@ textarea {
 }
 
 .contact-text a {
-    color: #bbb;
+    color: var(--color-black-300);
     text-decoration: none;
     transition-duration: 0.2s;
+
+    html.darkmode & {
+        color: var(--color-white-200);
+    }
 }
 
 .contact-text a:hover {
-    color: #fff;
+    color: var(--color-blue-500);
     text-decoration: none;
 }
-
 
 /* Social Media Icons */
 .social-media-list {
@@ -123,12 +192,13 @@ textarea {
     font-size: 22px;
     text-align: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 40px auto 20px;
     padding: 0;
+    list-style: none;
 }
 
 .social-media-list li a {
-    color: #fff;
+    color: var(--color-white-100);
 }
 
 .social-media-list li {
@@ -136,13 +206,17 @@ textarea {
     display: inline-block;
     height: 60px;
     width: 60px;
-    margin: 10px 3px;
+    margin: 10px 8px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
+    color: var(--color-white-100);
+    background-color: var(--color-black-200);
     cursor: pointer;
     transition: all .2s ease-in-out;
+
+    html.darkmode & {
+        background-color: var(--color-black-300);
+    }
 }
 
 .social-media-list li:after {
@@ -155,12 +229,14 @@ textarea {
     line-height: 60px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px var(--color-blue-500);
     transition: all .2s ease-in-out;
 }
 
 .social-media-list li:hover {
-    background-color: #fff;
+    background-color: var(--color-white-100);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social-media-list li:hover .fa-facebook {
@@ -172,7 +248,6 @@ textarea {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
 }
 
 .social-media-list li:hover .fa-x-twitter {
@@ -186,85 +261,107 @@ textarea {
 }
 
 .social-media-list li:hover a {
-    color: #000;
+    color: var(--color-black-400);
 }
 
 .copyright {
     font: 200 14px 'Oswald', sans-serif;
-    color: #555;
+    color: var(--color-white-400);
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 20px;
+
+    html.darkmode & {
+        color: var(--color-white-300);
+    }
 }
 
 hr {
-    border-color: rgba(255,255,255,.6);
+    border-color: var(--color-white-300);
+    margin: 30px 0;
+
+    html.darkmode & {
+        border-color: var(--color-black-200);
+    }
 }
 
 /* Begin Media Queries*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1400px) {
     .contact-wrapper {
-        display: flex;
-        flex-direction: column;
+        gap: 100px;
+        max-width: 95%;
     }
-    .direct-contact-container, .form-horizontal {
-        margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-wrapper {
+        gap: 80px;
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-wrapper {
+        gap: 60px;
     }
 
+    .form-horizontal,
     .direct-contact-container {
-        margin-top: 60px;
-        max-width: 300px;
+        max-width: 400px;
     }
-    .social-media-list li {
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
+}
+
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        padding: 20px;
     }
-    .social-media-list li:after {
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
+
+    .direct-contact-container,
+    .form-horizontal {
+        margin: 0 auto;
+        max-width: 90%;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 569px) {
-
-    .direct-contact-container, .form-wrapper {
-        float: none;
-        margin: 0 auto;
-    }
-    .form-control, textarea {
-
-        margin: 0 auto;
+    .contact-wrapper {
+        padding: 15px;
+        gap: 40px;
     }
 
-
-    .name, .email, textarea {
-        width: 280px;
+    .direct-contact-container,
+    .form-horizontal {
+        max-width: 100%;
     }
 
-    .direct-contact-container {
-        margin-top: 60px;
-        max-width: 280px;
-    }
-    .social-media-list {
-        left: 0;
-    }
     .social-media-list li {
-        height: 55px;
-        width: 55px;
-        line-height: 55px;
-        font-size: 2rem;
-    }
-    .social-media-list li:after {
-        width: 55px;
-        height: 55px;
-        line-height: 55px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        margin: 8px 5px;
     }
 
+    .social-media-list li:after {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 410px) {
-    .send-button {
-        width: 99%;
+    .contact-wrapper {
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .form-control,
+    textarea,
+    .send-button,
+    .alt-send-button {
+        width: 100%;
     }
 }

@@ -1,0 +1,150 @@
+.about-section {
+    body {
+        background: blanchedalmond;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &.darkmode {
+            background: #1a1a1a;
+            color: #ffffff;
+        }
+    }
+
+    .Apropos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        .paragraphe {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+
+            &:hover {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            h1 {
+                body.darkmode & {
+                    color: #ffffff;
+                }
+            }
+
+            nav {
+                body.darkmode & {
+                    color: #e0e0e0;
+                }
+            }
+
+            ul {
+                body.darkmode & {
+                    color: #e0e0e0;
+                }
+
+                li {
+                    body.darkmode & {
+                        color: #e0e0e0;
+                    }
+                }
+            }
+        }
+
+        img {
+            flex: 1;
+            margin-top: 10px;
+            margin-right: 10px;
+            width: 200px;
+            text-align: center;
+            transition: all 0.8s ease;
+            border-radius: 10px;
+            filter: brightness(1);
+
+            body.darkmode & {
+                filter: brightness(0.9);
+            }
+
+            &:hover {
+                transform: translateY(30px);
+
+                body.darkmode & {
+                    filter: brightness(1.1);
+                }
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        background-color: aliceblue;
+        color: black;
+        padding: 12px 24px;
+        border-radius: 24px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: transform 0.25s ease, background-color 0.25s ease;
+        margin-left: 15em;
+        margin-top: 10px;
+
+        body.darkmode & {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        &:hover {
+            background: rgb(242, 246, 246);
+            transform: scale(1.15);
+
+            body.darkmode & {
+                background: #555555;
+            }
+        }
+
+        &:active {
+            background-color: antiquewhite;
+            transform: scale(1.05);
+
+            body.darkmode & {
+                background-color: #444444;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .Apropos {
+            img {
+                margin-top: 100px;
+                max-width: 150px;
+                max-height: 150px;
+                flex: 1;
+                min-width: 50px;
+                text-align: center;
+                transform: translateY(30px);
+                transition: all 0.8s ease;
+                border-radius: 10px;
+            }
+
+            .paragraphe {
+                flex: 1;
+                min-width: 30px;
+                padding: 20px;
+                transition: all 0.8s ease;
+                font-size: 12px;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        a {
+            margin-left: 5em;
+            margin-top: 10px;
+        }
+    }
+}

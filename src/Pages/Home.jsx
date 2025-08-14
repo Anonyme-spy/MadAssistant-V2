@@ -3,6 +3,7 @@ import "../css/Hero.scss";
 import DownloadIcon from "../assets/download-outline.svg";
 import Contacts from "../Pages/Contacts.jsx";
 import Options from "../Pages/Options.jsx";
+import About from "./About.jsx";
 
 export default function Home() {
   return (
@@ -30,9 +31,13 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section>
+          <About />
+        </section>
         <section className="section options-section" id="options-section">
           <Options />
         </section>
+
         <section className="section contacts-section" id="contacts-section">
           <Contacts />
         </section>

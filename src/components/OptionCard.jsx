@@ -1,38 +1,84 @@
-const OptionCard = () => {
+import { useEffect } from "react";
+import "../css/option.scss";
+import PropTypes from "prop-types";
+
+const OptionCard = ({
+  colorClass,
+  customColor,
+  imgSrc,
+  title,
+  subtitle,
+  description,
+  tags,
+}) => {
+  useEffect(() => {
+    // This adds some nice ellipsis to the description:
+    document.querySelectorAll(".projcard-description").forEach(function (box) {
+      if (window.$clamp) {
+        window.$clamp(box, { clamp: 6 });
+      }
+    });
+  }, []);
+
+  // Déterminer la classe de couleur à utiliser
+  const cardColorClass = customColor
+    ? "projcard-customcolor"
+    : colorClass
+      ? `projcard-${colorClass}`
+      : "projcard-blue";
+
   return (
-    <div className="card">
-      <div className="card-inner" style={{ "--clr": "#fff" }}>
-        <div className="box">
-          <div className="imgBox">
-            <img src="/S.png" alt="Shower Gel" />
-          </div>
-          <div className="icon">
-            <a href="#" className="iconBox">
-              <span className="material-symbols-outlined">arrow_outward</span>
-            </a>
+    <div
+      className={`projcard ${cardColorClass}`}
+      style={customColor ? { "--projcard-color": customColor } : {}}
+    >
+      <div className="projcard-innerbox">
+        <img
+          className="projcard-img"
+          src={imgSrc}
+          alt={title || "Carte projet"}
+        />
+        <div className="projcard-textbox">
+          <div className="projcard-title">{title}</div>
+          <div className="projcard-subtitle">{subtitle}</div>
+          <div className="projcard-bar"></div>
+          <div className="projcard-description">{description}</div>
+          <div className="projcard-tagbox">
+            {tags &&
+              tags.map((tag, index) => (
+                <span key={index} className="projcard-tag">
+                  {tag}
+                </span>
+              ))}
           </div>
         </div>
       </div>
-      <div className="content">
-        <h3>shower gel</h3>
-        <p>
-          Fill out the form and the algorithm will offer the right team of
-          experts
-        </p>
-        <ul>
-          <li style={{ "--clr-tag": "#d3b19a" }} className="branding">
-            branding
-          </li>
-          <li style={{ "--clr-tag": "#70b3b1" }} className="packaging">
-            packaging
-          </li>
-          <li style={{ "--clr-tag": "#d05fa2" }} className="marketing">
-            marketing
-          </li>
-        </ul>
-      </div>
     </div>
   );
+};
+
+OptionCard.propTypes = {
+  colorClass: PropTypes.oneOf([
+    "blue",
+    "red",
+    "green",
+    "yellow",
+    "orange",
+    "brown",
+    "grey",
+  ]),
+  customColor: PropTypes.string,
+  imgSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
+};
+
+OptionCard.defaultProps = {
+  colorClass: "blue",
+  subtitle: "",
+  tags: [],
 };
 
 export default OptionCard;
