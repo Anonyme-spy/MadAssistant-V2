@@ -17,9 +17,6 @@
   --color-blue-500: hsl(215, 83%, 53%);
   --color-blue-600: hsl(215, 76%, 48%);
 
-  --transparent: rgba(0, 0, 0, 0);
-  --blur-bg: blur(5px);
-
   --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
   0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -177,16 +174,12 @@ video {
   width: 100%;
   height: auto;
   margin: 0 auto;
-
-  background: var(--transparent);
-  backdrop-filter: var(--blur-bg);
-
-  /*background-color: var(--color-white-100);
+  background-color: var(--color-white-100);
   box-shadow: var(--shadow-medium);
 
   html.darkmode & {
     background-color: var(--color-black-400);
-  }*/
+  }
 }
 
 .navbar {

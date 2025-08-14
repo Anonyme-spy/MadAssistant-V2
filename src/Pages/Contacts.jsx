@@ -87,15 +87,13 @@ const Contacts = () => {
 							</li>
 						</a>
 
-						<a href="https://x.com" target="_blank" className="contact-icon">
+						<a href="https://x.com/MadAssistant13" target="_blank" className="contact-icon">
 							<li>
 								<i className="fa-brands fa-x-twitter"></i>
 							</li>
 						</a>
 
 					</ul>
-
-					<div className="copyright">&copy;2025 MadAssistant - Tous droits réservés</div>
 
 				</div>
 

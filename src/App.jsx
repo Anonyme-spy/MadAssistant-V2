@@ -5,6 +5,7 @@ import Home from "./Pages/Home.jsx";
 import NavBar from "./components/NavBar.jsx";
 import Contacts from "./Pages/Contacts.jsx";
 import Options from "./Pages/Options.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

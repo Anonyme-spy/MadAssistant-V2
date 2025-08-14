@@ -1,0 +1,111 @@
+.footer {
+  border-radius: 5px;
+  border: grey 0.3px solid ;
+  padding: 0;
+  margin: 0;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__logo {
+    margin-right: 0.5rem;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: contain;
+    }
+  }
+
+  &__brand-name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    background: #22d3ee;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+/*    @media (max-width: 768px) {
+      flex-direction: column;
+    }*/
+
+    &-link {
+      color: #9ca3af;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #22d3ee;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 0.75rem;
+
+    &-link {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: rgba(30, 58, 138, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #1e40af;
+      }
+    }
+
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+  }
+}
