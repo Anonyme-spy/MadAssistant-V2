@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Malala",
+    "subtitle": "Analakely",
+    "description": "Sage-femme située à Antananarivo, Analakely. Téléphone: +261 34 12 345 01",
+    "tags": ["Sage-Femme", "Analakely", "Antananarivo"]
+  },
+  "2": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Zina",
+    "subtitle": "Anosy",
+    "description": "Sage-femme située à Antananarivo, Anosy. Téléphone: +261 33 23 234 56",
+    "tags": ["Sage-Femme", "Anosy", "Antananarivo"]
+  },
+  "3": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Noro",
+    "subtitle": "Mahamasina",
+    "description": "Sage-femme située à Antananarivo, Mahamasina. Téléphone: +261 32 45 678 90",
+    "tags": ["Sage-Femme", "Mahamasina", "Antananarivo"]
+  },
+  "4": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Mamy",
+    "subtitle": "Ambohimanarina",
+    "description": "Sage-femme située à Antananarivo, Ambohimanarina. Téléphone: +261 38 76 543 21",
+    "tags": ["Sage-Femme", "Ambohimanarina", "Antananarivo"]
+  },
+  "5": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Lalao",
+    "subtitle": "Itaosy",
+    "description": "Sage-femme située à Antananarivo, Itaosy. Téléphone: +261 34 98 765 43",
+    "tags": ["Sage-Femme", "Itaosy", "Antananarivo"]
+  },
+  "6": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Soa",
+    "subtitle": "Andavamamba",
+    "description": "Sage-femme située à Antananarivo, Andavamamba. Téléphone: +261 32 11 223 44",
+    "tags": ["Sage-Femme", "Andavamamba", "Antananarivo"]
+  },
+  "7": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Vola",
+    "subtitle": "Tanjombato",
+    "description": "Sage-femme située à Antananarivo, Tanjombato. Téléphone: +261 33 45 678 21",
+    "tags": ["Sage-Femme", "Tanjombato", "Antananarivo"]
+  },
+  "8": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Manitra",
+    "subtitle": "Ampefiloha",
+    "description": "Sage-femme située à Antananarivo, Ampefiloha. Téléphone: +261 34 22 345 78",
+    "tags": ["Sage-Femme", "Ampefiloha", "Antananarivo"]
+  },
+  "9": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Hoby",
+    "subtitle": "Tsaralalàna",
+    "description": "Sage-femme située à Antananarivo, Tsaralalàna. Téléphone: +261 38 65 432 19",
+    "tags": ["Sage-Femme", "Tsaralalàna", "Antananarivo"]
+  },
+  "10": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Hasina",
+    "subtitle": "Mandroseza",
+    "description": "Sage-femme située à Antananarivo, Mandroseza. Téléphone: +261 32 76 543 21",
+    "tags": ["Sage-Femme", "Mandroseza", "Antananarivo"]
+  },
+  "11": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Natacha",
+    "subtitle": "67Ha",
+    "description": "Sage-femme située à Antananarivo, 67Ha. Téléphone: +261 34 54 321 76",
+    "tags": ["Sage-Femme", "67Ha", "Antananarivo"]
+  },
+  "12": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Lova",
+    "subtitle": "Andohalo",
+    "description": "Sage-femme située à Antananarivo, Andohalo. Téléphone: +261 34 12 876 54",
+    "tags": ["Sage-Femme", "Andohalo", "Antananarivo"]
+  },
+  "13": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Fara",
+    "subtitle": "Ambohipotsy",
+    "description": "Sage-femme située à Antananarivo, Ambohipotsy. Téléphone: +261 32 45 678 90",
+    "tags": ["Sage-Femme", "Ambohipotsy", "Antananarivo"]
+  },
+  "14": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Tahiry",
+    "subtitle": "Ankazomanga",
+    "description": "Sage-femme située à Antananarivo, Ankazomanga. Téléphone: +261 33 22 345 78",
+    "tags": ["Sage-Femme", "Ankazomanga", "Antananarivo"]
+  },
+  "15": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Sage-Femme Hery",
+    "subtitle": "Anjanahary",
+    "description": "Sage-femme située à Antananarivo, Anjanahary. Téléphone: +261 33 89 210 65",
+    "tags": ["Sage-Femme", "Anjanahary", "Antananarivo"]
+  }
+}

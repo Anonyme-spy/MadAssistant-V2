@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital HJRA",
+    "subtitle": "Ampefiloha",
+    "description": "Hôpital situé à Antananarivo, Ampefiloha. Téléphone: +261 34 12 345 67",
+    "tags": ["Hôpital", "Ampefiloha", "Antananarivo"]
+  },
+  "2": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Joseph Raseta Befelatanana",
+    "subtitle": "Befelatanana",
+    "description": "Hôpital situé à Antananarivo, Befelatanana. Téléphone: +261 33 22 987 65",
+    "tags": ["Hôpital", "Befelatanana", "Antananarivo"]
+  },
+  "3": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Militaire Soavinandriana",
+    "subtitle": "Militaire - Soavinandriana",
+    "description": "Hôpital militaire situé à Antananarivo, Soavinandriana. Téléphone: +261 32 78 654 32",
+    "tags": ["Hôpital", "Militaire", "Soavinandriana"]
+  },
+  "4": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Mère-Enfant Tsaralalàna",
+    "subtitle": "Mère-Enfant - Tsaralalàna",
+    "description": "Hôpital mère-enfant situé à Antananarivo, Tsaralalàna. Téléphone: +261 34 56 789 10",
+    "tags": ["Hôpital", "Mère-Enfant", "Tsaralalàna"]
+  },
+  "5": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Ravoahangy Andrianavalona",
+    "subtitle": "Andrianavalona",
+    "description": "Hôpital situé à Antananarivo, Andrianavalona. Téléphone: +261 38 90 123 45",
+    "tags": ["Hôpital", "Andrianavalona", "Antananarivo"]
+  },
+  "6": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Analakely",
+    "subtitle": "Analakely",
+    "description": "Hôpital situé à Antananarivo, Analakely. Téléphone: +261 32 44 556 78",
+    "tags": ["Hôpital", "Analakely", "Antananarivo"]
+  },
+  "7": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Manarapenitra Anosiala",
+    "subtitle": "Anosiala",
+    "description": "Hôpital situé à Antananarivo, Anosiala. Téléphone: +261 34 21 432 10",
+    "tags": ["Hôpital", "Anosiala", "Antananarivo"]
+  },
+  "8": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Universitaire Befelatanana",
+    "subtitle": "Universitaire - Befelatanana",
+    "description": "Hôpital universitaire situé à Antananarivo, Befelatanana. Téléphone: +261 33 45 678 90",
+    "tags": ["Hôpital", "Universitaire", "Befelatanana"]
+  },
+  "9": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Itaosy",
+    "subtitle": "Itaosy",
+    "description": "Hôpital situé à Antananarivo, Itaosy. Téléphone: +261 34 98 765 43",
+    "tags": ["Hôpital", "Itaosy", "Antananarivo"]
+  },
+  "10": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Ambohimiandra",
+    "subtitle": "Ambohimiandra",
+    "description": "Hôpital situé à Antananarivo, Ambohimiandra. Téléphone: +261 32 56 432 19",
+    "tags": ["Hôpital", "Ambohimiandra", "Antananarivo"]
+  },
+  "11": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Ambanidia",
+    "subtitle": "Ambanidia",
+    "description": "Hôpital situé à Antananarivo, Ambanidia. Téléphone: +261 38 12 876 54",
+    "tags": ["Hôpital", "Ambanidia", "Antananarivo"]
+  },
+  "12": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Andohalo",
+    "subtitle": "Andohalo",
+    "description": "Hôpital situé à Antananarivo, Andohalo. Téléphone: +261 34 22 345 78",
+    "tags": ["Hôpital", "Andohalo", "Antananarivo"]
+  },
+  "13": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Anosy",
+    "subtitle": "Anosy",
+    "description": "Hôpital situé à Antananarivo, Anosy. Téléphone: +261 32 65 987 21",
+    "tags": ["Hôpital", "Anosy", "Antananarivo"]
+  },
+  "14": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Mandroseza",
+    "subtitle": "Mandroseza",
+    "description": "Hôpital situé à Antananarivo, Mandroseza. Téléphone: +261 33 89 210 65",
+    "tags": ["Hôpital", "Mandroseza", "Antananarivo"]
+  },
+  "15": {
+    "colorClass": "blue",
+    "imgSrc": "/images/hopitale.jpg",
+    "title": "Hôpital Mahamasina",
+    "subtitle": "Mahamasina",
+    "description": "Hôpital situé à Antananarivo, Mahamasina. Téléphone: +261 38 54 321 76",
+    "tags": ["Hôpital", "Mahamasina", "Antananarivo"]
+  }
+}

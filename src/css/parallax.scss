@@ -1,0 +1,315 @@
+// Mise à jour de parallax.scss avec optimisations de performance
+.parallax-container {
+  overflow-y: auto;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background: linear-gradient(180deg, var(--color-white-100) 0%, var(--color-white-200) 100%);
+
+  html.darkmode & {
+    background: linear-gradient(180deg, var(--color-black-400) 0%, var(--color-black-300) 100%);
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.parallax-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  // Retirer will-change pour réduire la consommation mémoire
+  transition: background-color 0.4s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(21, 101, 192, 0.02) 0%,
+            rgba(59, 130, 246, 0.03) 50%,
+            rgba(21, 101, 192, 0.02) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+
+    html.darkmode & {
+      background: linear-gradient(135deg,
+              rgba(255, 255, 255, 0.01) 0%,
+              rgba(59, 130, 246, 0.04) 50%,
+              rgba(255, 255, 255, 0.01) 100%);
+    }
+  }
+
+  &.active::before {
+    opacity: 1;
+  }
+}
+
+.section-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+  opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &.animate-in {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Sections avec backgrounds différenciés et optimisés
+.banner-section {
+  background: linear-gradient(135deg,
+          var(--color-white-100) 0%,
+          #f8fafc 50%,
+          var(--color-white-200) 100%);
+
+  html.darkmode & {
+    background: linear-gradient(135deg,
+            var(--color-black-400) 0%,
+            var(--color-black-300) 50%,
+            var(--color-black-200) 100%);
+  }
+
+  .section-content {
+    transition-delay: 0.1s;
+  }
+
+  .banner-inner {
+    // Utiliser transform uniquement pendant l'animation
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+
+  .banner-image {
+    animation: slideInFromRight 1s ease-out forwards;
+    border-radius: 12px;
+    box-shadow: var(--shadow-large);
+    transition: filter 0.3s ease, transform 0.3s ease;
+
+    html.darkmode & {
+      filter: brightness(0.85) contrast(1.1);
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+.about-section {
+  background: linear-gradient(135deg,
+          #f1f5f9 0%,
+          var(--color-white-100) 50%,
+          #e2e8f0 100%);
+
+  html.darkmode & {
+    background: linear-gradient(135deg,
+            var(--color-black-300) 0%,
+            var(--color-black-400) 50%,
+            var(--color-black-200) 100%);
+  }
+
+  .section-content {
+    transition-delay: 0.2s;
+  }
+
+  // Optimisation pour le composant About
+  .about-section {
+    background: transparent;
+    color: var(--color-black-400);
+
+    html.darkmode & {
+      color: var(--color-white-100);
+    }
+  }
+}
+
+.options-section {
+  background: linear-gradient(135deg,
+          #fafafa 0%,
+          #f8fafc 50%,
+          var(--color-white-200) 100%);
+
+  html.darkmode & {
+    background: linear-gradient(135deg,
+            var(--color-black-200) 0%,
+            var(--color-black-300) 50%,
+            var(--color-black-400) 100%);
+  }
+
+  .section-content {
+    transition-delay: 0.3s;
+  }
+
+  .option-page {
+    background: transparent;
+    color: var(--color-black-400);
+
+    html.darkmode & {
+      color: var(--color-white-100);
+    }
+  }
+
+  .projcard-container {
+    // Animation optimisée
+    animation: fadeInUp 1s ease-out forwards;
+  }
+}
+
+// Navigation dots optimisée
+.section-navigation {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  backdrop-filter: blur(4px);
+
+  html.darkmode & {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  &.active {
+    background: var(--color-blue-500);
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(21, 101, 192, 0.3);
+
+    html.darkmode & {
+      background: var(--color-blue-400);
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    }
+  }
+
+  &:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+
+    html.darkmode & {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+// Animations optimisées avec performance
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Responsive optimisé
+@media (max-width: 768px) {
+  .parallax-section {
+    min-height: 100vh;
+  }
+
+  .section-content {
+    padding: 1rem;
+    transform: translateY(15px);
+  }
+
+  .section-navigation {
+    right: 1rem;
+    gap: 1.2rem;
+  }
+
+  .nav-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  // Réduire la durée des animations sur mobile
+  .banner-inner,
+  .banner-image,
+  .projcard-container {
+    animation-duration: 0.6s;
+  }
+}
+
+// Désactiver les animations pour les utilisateurs préférant moins de mouvement
+@media (prefers-reduced-motion: reduce) {
+  .parallax-container {
+    scroll-behavior: auto;
+  }
+
+  .section-content,
+  .parallax-section::before,
+  .nav-dot {
+    transition: none;
+  }
+
+  .banner-inner,
+  .banner-image,
+  .projcard-container {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+// Optimisation pour les GPU moins puissants
+@media (max-resolution: 1dppx) {
+  .parallax-section::before {
+    background: none;
+  }
+
+  .banner-image {
+    box-shadow: var(--shadow-medium);
+  }
+}

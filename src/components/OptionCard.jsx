@@ -1,84 +1,55 @@
-import { useEffect } from "react";
-import "../css/option.scss";
-import PropTypes from "prop-types";
-
 const OptionCard = ({
-  colorClass,
-  customColor,
-  imgSrc,
-  title,
-  subtitle,
-  description,
-  tags,
+  image = "/S.png",
+  title = "Default Title",
+  description = "Default description",
+  tags = [],
+  link = "#",
+  color = "#fff",
 }) => {
-  useEffect(() => {
-    // This adds some nice ellipsis to the description:
-    document.querySelectorAll(".projcard-description").forEach(function (box) {
-      if (window.$clamp) {
-        window.$clamp(box, { clamp: 6 });
-      }
-    });
-  }, []);
+  // Couleurs prédéfinies pour les tags (maximum 3)
+  const tagColors = [
+    { bg: "#d3b19a", class: "branding" },
+    { bg: "#70b3b1", class: "packaging" },
+    { bg: "#d05fa2", class: "marketing" },
+  ];
 
-  // Déterminer la classe de couleur à utiliser
-  const cardColorClass = customColor
-    ? "projcard-customcolor"
-    : colorClass
-      ? `projcard-${colorClass}`
-      : "projcard-blue";
+  // Limiter à 3 tags maximum
+  const limitedTags = tags.slice(0, 3);
 
   return (
-    <div
-      className={`projcard ${cardColorClass}`}
-      style={customColor ? { "--projcard-color": customColor } : {}}
-    >
-      <div className="projcard-innerbox">
-        <img
-          className="projcard-img"
-          src={imgSrc}
-          alt={title || "Carte projet"}
-        />
-        <div className="projcard-textbox">
-          <div className="projcard-title">{title}</div>
-          <div className="projcard-subtitle">{subtitle}</div>
-          <div className="projcard-bar"></div>
-          <div className="projcard-description">{description}</div>
-          <div className="projcard-tagbox">
-            {tags &&
-              tags.map((tag, index) => (
-                <span key={index} className="projcard-tag">
-                  {tag}
-                </span>
-              ))}
+    <div className="card">
+      <div className="card-inner" style={{ "--clr": color }}>
+        <div className="box">
+          <div className="imgBox">
+            <img src={image} alt={title} />
+          </div>
+          <div className="icon">
+            <a href={link} className="iconBox">
+              <i className="fas fa-external-link-alt"></i>
+            </a>
           </div>
         </div>
       </div>
+      <div className="content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        {/* Afficher la liste seulement si des tags sont fournis */}
+        {limitedTags.length > 0 && (
+          <ul>
+            {limitedTags.map((tag, index) => (
+              <li
+                key={index}
+                style={{ "--clr-tag": tagColors[index].bg }}
+                className={tagColors[index].class}
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
-};
-
-OptionCard.propTypes = {
-  colorClass: PropTypes.oneOf([
-    "blue",
-    "red",
-    "green",
-    "yellow",
-    "orange",
-    "brown",
-    "grey",
-  ]),
-  customColor: PropTypes.string,
-  imgSrc: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string,
-  description: PropTypes.string.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string),
-};
-
-OptionCard.defaultProps = {
-  colorClass: "blue",
-  subtitle: "",
-  tags: [],
 };
 
 export default OptionCard;

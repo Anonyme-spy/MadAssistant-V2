@@ -1,15 +1,85 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../css/Hero.scss";
+import "../css/parallax.scss";
 import DownloadIcon from "../assets/download-outline.svg";
-import Contacts from "../Pages/Contacts.jsx";
-import Options from "../Pages/Options.jsx";
 import About from "./About.jsx";
+import Options from "./Options.jsx";
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState(0);
+  const sectionsRef = useRef([]);
+  const containerRef = useRef(null);
+
+  const sections = [
+    { id: "banner", component: "banner" },
+    { id: "about", component: "about" },
+    { id: "options", component: "options" },
+  ];
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = sectionsRef.current.indexOf(entry.target);
+          if (entry.isIntersecting) {
+            setActiveSection(index);
+            entry.target.classList.add("active");
+            entry.target
+              .querySelector(".section-content")
+              ?.classList.add("animate-in");
+          } else {
+            entry.target.classList.remove("active");
+            entry.target
+              .querySelector(".section-content")
+              ?.classList.remove("animate-in");
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+        rootMargin: "-5% 0px",
+      },
+    );
+
+    sectionsRef.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sectionsRef.current.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
+  const scrollToSection = (index) => {
+    sectionsRef.current[index]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
-    <>
-      <main className="main min-h-[100vh] flex flex-col justify-start scroll-auto">
-        <section className="section banner banner-section" id="banner-section">
+    <div className="parallax-container" ref={containerRef}>
+      {/* Navigation dots */}
+      <div className="section-navigation">
+        {sections.map((_, index) => (
+          <div
+            key={index}
+            className={`nav-dot ${activeSection === index ? "active" : ""}`}
+            onClick={() => scrollToSection(index)}
+            title={`Section ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Banner Section */}
+      <section
+        ref={(el) => (sectionsRef.current[0] = el)}
+        className="parallax-section banner-section"
+        id="banner-section"
+      >
+        <div className="section-content">
           <div className="container banner-column">
             <img
               className="banner-image"
@@ -30,18 +100,30 @@ export default function Home() {
               </button>
             </div>
           </div>
-        </section>
-        <section>
-          <About />
-        </section>
-        <section className="section options-section" id="options-section">
-          <Options />
-        </section>
+        </div>
+      </section>
 
-        <section className="section contacts-section" id="contacts-section">
-          <Contacts />
-        </section>
-      </main>
-    </>
+      {/* About Section */}
+      <section
+        ref={(el) => (sectionsRef.current[1] = el)}
+        className="parallax-section about-section"
+        id="about-section"
+      >
+        <div className="section-content">
+          <About />
+        </div>
+      </section>
+
+      {/* Options Section */}
+      <section
+        ref={(el) => (sectionsRef.current[2] = el)}
+        className="parallax-section options-section"
+        id="options-section"
+      >
+        <div className="section-content">
+          <Options />
+        </div>
+      </section>
+    </div>
   );
 }

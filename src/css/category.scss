@@ -1,0 +1,35 @@
+.category-page {
+  margin-top: 4rem; // Compense la navbar fixe (hauteur de 4rem)
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 4rem);
+
+  html.darkmode & {
+    background-color: var(--color-black-400);
+    color: var(--color-white-100);
+  }
+
+  .category-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-black-400);
+
+    html.darkmode & {
+      color: var(--color-white-100);
+    }
+  }
+
+  .category-description {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-black-300);
+
+    html.darkmode & {
+      color: var(--color-white-200);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+}

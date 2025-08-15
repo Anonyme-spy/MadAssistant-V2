@@ -1,0 +1,82 @@
+{
+  "medical": {
+    "title": "Professeur Médical",
+    "p": "Consultez un professeur médical rapidement pour des conseils experts.",
+    "i": "/images/docteur.jpg",
+    "link": "medical",
+    "availability": "24h/24 - 7j/7",
+    "description": "Accès rapide aux professionnels de santé qualifiés"
+  },
+  "sante": {
+    "title": "Santé",
+    "p": "Accédez aux services de santé et de prévention.",
+    "i": "/images/santer.jpg",
+    "link": "sante",
+    "availability": "Lun-Ven 9h-18h",
+    "description": "Services de santé préventive et conseils médicaux"
+  },
+  "ambulance": {
+    "title": "Ambulance",
+    "p": "Appelez une ambulance immédiatement en cas d'urgence.",
+    "i": "/images/ambulance.jpg",
+    "link": "ambulance",
+    "availability": "Urgence 24h/24",
+    "description": "Service d'urgence médicale disponible 24h/24"
+  },
+  "hospital": {
+    "title": "Hôpital",
+    "p": "Trouvez un hôpital proche de vous rapidement.",
+    "i": "/images/hopitale.jpg",
+    "link": "hospital",
+    "availability": "24h/24 - 7j/7",
+    "description": "Localisation des établissements hospitaliers"
+  },
+  "police": {
+    "title": "Police",
+    "p": "Appelez la police en un clic pour toute urgence.",
+    "i": "/images/Police.jpg",
+    "link": "police",
+    "availability": "Urgence 24h/24",
+    "description": "Forces de l'ordre disponibles en cas de besoin"
+  },
+  "securite": {
+    "title": "Sécurité",
+    "p": "Contactez les services de sécurité rapidement.",
+    "i": "/images/securiter.jpg",
+    "link": "securite",
+    "availability": "24h/24 - 7j/7",
+    "description": "Services de sécurité pour votre protection"
+  },
+  "fire": {
+    "title": "Pompiers",
+    "p": "Accédez rapidement aux services de pompiers.",
+    "i": "/images/incendie.jpg",
+    "link": "pompier",
+    "availability": "Urgence 24h/24",
+    "description": "Service d'incendie et de secours d'urgence"
+  },
+  "sage-femme": {
+    "title": "Sage-femme",
+    "p": "Trouvez une sage-femme rapidement pour un suivi personnalisé.",
+    "i": "/images/sage_femme.jpg",
+    "link": "nurse",
+    "availability": "Sur rendez-vous",
+    "description": "Accompagnement professionnel pour la maternité"
+  },
+  "veterinary": {
+    "title": "Vétérinaires",
+    "p": "Trouvez un vétérinaire pour votre animal de compagnie.",
+    "i": "/images/veterinaire.jpg",
+    "link": "veterinaire",
+    "availability": "Lun-Sam 8h-19h",
+    "description": "Soins vétérinaires professionnels pour vos animaux"
+  },
+  "education": {
+    "title": "Éducation",
+    "p": "Accédez aux services éducatifs et d'orientation scolaire.",
+    "i": "/images/education.jpg",
+    "link": "education",
+    "availability": "Lun-Ven 8h-17h",
+    "description": "Services d'éducation et d'accompagnement scolaire"
+  }
+}

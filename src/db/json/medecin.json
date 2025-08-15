@@ -1,0 +1,114 @@
+{
+  "1": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Jean Rakoto",
+    "subtitle": "Clinique Andohalo",
+    "description": "Médecin à Antananarivo, Hôpital Manarapenitra. En cas d'urgence, appeler immédiatement le SAMU au 117. Téléphone: +261 34 12 345 67",
+    "tags": ["Médecin", "Andohalo", "Urgence"]
+  },
+  "2": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Marie Rasoanirina",
+    "subtitle": "Clinique Tamatave",
+    "description": "Médecin à Toamasina, Hôpital Be. En cas de détresse respiratoire, se rendre à la clinique en urgence. Téléphone: +261 33 22 987 65",
+    "tags": ["Médecin", "Tamatave", "Respiratoire"]
+  },
+  "3": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Hery Mamy",
+    "subtitle": "Clinique de la Réunion",
+    "description": "Médecin à Antananarivo, Hôpital de la Réunion. Consulter en urgence pour toute chirurgie abdominale. Téléphone: +261 32 45 678 12",
+    "tags": ["Médecin", "Chirurgie", "Abdominale"]
+  },
+  "4": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Fanja Rabemananjara",
+    "subtitle": "Clinique Befelatanana",
+    "description": "Médecin à Antananarivo, Hôpital Befelatanana. En cas de diabète, consulter rapidement. Téléphone: +261 34 56 789 23",
+    "tags": ["Médecin", "Diabète", "Befelatanana"]
+  },
+  "5": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Lova Razafindrabe",
+    "subtitle": "Clinique universitaire",
+    "description": "Médecin à Antananarivo, Hôpital de l'Université. Éviter de fumer avant toute consultation. Téléphone: +261 33 22 111 56",
+    "tags": ["Médecin", "Universitaire", "Consultation"]
+  },
+  "6": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Naina Raharivelo",
+    "subtitle": "Clinique Ambatolampy",
+    "description": "Médecin à Antananarivo, Hôpital Ambatolampy. Évitez les aliments gras avant la consultation. Téléphone: +261 34 67 890 45",
+    "tags": ["Médecin", "Ambatolampy", "Nutrition"]
+  },
+  "7": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Soa Rajoelina",
+    "subtitle": "Clinique Miandrivazo",
+    "description": "Médecin à Antananarivo, Hôpital Miandrivazo. Consulter pour toute douleur persistante. Téléphone: +261 32 33 444 55",
+    "tags": ["Médecin", "Miandrivazo", "Douleur"]
+  },
+  "8": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Aina Raveloson",
+    "subtitle": "Clinique Moramanga",
+    "description": "Médecin à Antananarivo, Hôpital Moramanga. Prévoir une prise de sang avant la consultation. Téléphone: +261 34 56 999 12",
+    "tags": ["Médecin", "Moramanga", "Analyses"]
+  },
+  "9": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Mamy Ralison",
+    "subtitle": "Clinique Ikopa",
+    "description": "Médecin à Antananarivo, Hôpital Ikopa. Pour toute chirurgie orthopédique, prévoir une radiographie. Téléphone: +261 32 44 555 88",
+    "tags": ["Médecin", "Orthopédie", "Radiographie"]
+  },
+  "10": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Hélène Ravelojaona",
+    "subtitle": "Clinique Ambohimanarina",
+    "description": "Médecin à Antananarivo, Hôpital Ambohimanarina. En cas de problèmes cardiovasculaires, consulter immédiatement. Téléphone: +261 34 56 789 67",
+    "tags": ["Médecin", "Cardiologie", "Cardiovasculaire"]
+  },
+  "11": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Vola Rina",
+    "subtitle": "Clinique Anosizato",
+    "description": "Médecin à Antananarivo, Hôpital Anosizato. Eviter les efforts physiques avant consultation. Téléphone: +261 33 22 345 12",
+    "tags": ["Médecin", "Anosizato", "Efforts physiques"]
+  },
+  "12": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Tahina Rajo",
+    "subtitle": "Clinique Vohémar",
+    "description": "Médecin à Antananarivo, Hôpital Vohémar. Prévoir un suivi pour les maladies chroniques. Téléphone: +261 38 22 345 67",
+    "tags": ["Médecin", "Vohémar", "Chroniques"]
+  },
+  "13": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Jean Nirina",
+    "subtitle": "Clinique Ivato",
+    "description": "Médecin à Antananarivo, Hôpital Ivato. Consultation en cardiologie, éviter de manger avant. Téléphone: +261 34 56 889 34",
+    "tags": ["Médecin", "Cardiologie", "Ivato"]
+  },
+  "14": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Harisoa Rabearivelo",
+    "subtitle": "Clinique Tsaralalana",
+    "description": "Médecin à Antananarivo, Hôpital Tsaralalana. Prévoir une échographie avant la consultation. Téléphone: +261 33 23 456 78",
+    "tags": ["Médecin", "Tsaralalana", "Échographie"]
+  }
+}

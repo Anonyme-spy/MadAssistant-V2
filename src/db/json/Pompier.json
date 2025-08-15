@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Casernement Central",
+    "subtitle": "Analakely",
+    "description": "Caserne de pompiers située à Antananarivo, Analakely. Téléphone: +261 34 12 345 01",
+    "tags": ["Pompiers", "Caserne", "Analakely"]
+  },
+  "2": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Anosy",
+    "subtitle": "Anosy",
+    "description": "Caserne de pompiers située à Antananarivo, Anosy. Téléphone: +261 33 23 234 56",
+    "tags": ["Pompiers", "Caserne", "Anosy"]
+  },
+  "3": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Mahamasina",
+    "subtitle": "Mahamasina",
+    "description": "Caserne de pompiers située à Antananarivo, Mahamasina. Téléphone: +261 32 45 678 90",
+    "tags": ["Pompiers", "Caserne", "Mahamasina"]
+  },
+  "4": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Ambohimanarina",
+    "subtitle": "Ambohimanarina",
+    "description": "Caserne de pompiers située à Antananarivo, Ambohimanarina. Téléphone: +261 38 76 543 21",
+    "tags": ["Pompiers", "Caserne", "Ambohimanarina"]
+  },
+  "5": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Itaosy",
+    "subtitle": "Itaosy",
+    "description": "Caserne de pompiers située à Antananarivo, Itaosy. Téléphone: +261 34 98 765 43",
+    "tags": ["Pompiers", "Caserne", "Itaosy"]
+  },
+  "6": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Andavamamba",
+    "subtitle": "Andavamamba",
+    "description": "Caserne de pompiers située à Antananarivo, Andavamamba. Téléphone: +261 32 11 223 44",
+    "tags": ["Pompiers", "Caserne", "Andavamamba"]
+  },
+  "7": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Tanjombato",
+    "subtitle": "Tanjombato",
+    "description": "Caserne de pompiers située à Antananarivo, Tanjombato. Téléphone: +261 33 45 678 21",
+    "tags": ["Pompiers", "Caserne", "Tanjombato"]
+  },
+  "8": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Ampefiloha",
+    "subtitle": "Ampefiloha",
+    "description": "Caserne de pompiers située à Antananarivo, Ampefiloha. Téléphone: +261 34 22 345 78",
+    "tags": ["Pompiers", "Caserne", "Ampefiloha"]
+  },
+  "9": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Tsaralalàna",
+    "subtitle": "Tsaralalàna",
+    "description": "Caserne de pompiers située à Antananarivo, Tsaralalàna. Téléphone: +261 38 65 432 19",
+    "tags": ["Pompiers", "Caserne", "Tsaralalàna"]
+  },
+  "10": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Mandroseza",
+    "subtitle": "Mandroseza",
+    "description": "Caserne de pompiers située à Antananarivo, Mandroseza. Téléphone: +261 32 76 543 21",
+    "tags": ["Pompiers", "Caserne", "Mandroseza"]
+  },
+  "11": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Anjanahary",
+    "subtitle": "Anjanahary",
+    "description": "Caserne de pompiers située à Antananarivo, Anjanahary. Téléphone: +261 33 89 210 65",
+    "tags": ["Pompiers", "Caserne", "Anjanahary"]
+  },
+  "12": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne 67Ha",
+    "subtitle": "67Ha",
+    "description": "Caserne de pompiers située à Antananarivo, 67Ha. Téléphone: +261 34 54 321 76",
+    "tags": ["Pompiers", "Caserne", "67Ha"]
+  },
+  "13": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Andohalo",
+    "subtitle": "Andohalo",
+    "description": "Caserne de pompiers située à Antananarivo, Andohalo. Téléphone: +261 34 12 876 54",
+    "tags": ["Pompiers", "Caserne", "Andohalo"]
+  },
+  "14": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Ambohipotsy",
+    "subtitle": "Ambohipotsy",
+    "description": "Caserne de pompiers située à Antananarivo, Ambohipotsy. Téléphone: +261 32 45 678 90",
+    "tags": ["Pompiers", "Caserne", "Ambohipotsy"]
+  },
+  "15": {
+    "colorClass": "red",
+    "imgSrc": "/images/incendie.jpg",
+    "title": "Caserne Ankazomanga",
+    "subtitle": "Ankazomanga",
+    "description": "Caserne de pompiers située à Antananarivo, Ankazomanga. Téléphone: +261 33 22 345 78",
+    "tags": ["Pompiers", "Caserne", "Ankazomanga"]
+  }
+}

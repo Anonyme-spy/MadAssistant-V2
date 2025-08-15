@@ -1,17 +1,16 @@
 .about-section {
-    body {
-        background: blanchedalmond;
+    // Mise à jour de cesily.scss - remplacer la déclaration .about-section
+        background: transparent; // Laisse le parent gérer le background
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         margin: 0;
         padding: 0;
         transition: background-color 0.3s ease, color 0.3s ease;
+        min-height: 100%;
+        color: var(--color-black-400);
 
-        &.darkmode {
-            background: #1a1a1a;
-            color: #ffffff;
+        html.darkmode & {
+            color: var(--color-white-100);
         }
-    }
-
     .Apropos {
         display: flex;
         flex-wrap: wrap;
@@ -31,24 +30,24 @@
             }
 
             h1 {
-                body.darkmode & {
+                html.darkmode & {
                     color: #ffffff;
                 }
             }
 
             nav {
-                body.darkmode & {
+                html.darkmode & {
                     color: #e0e0e0;
                 }
             }
 
             ul {
-                body.darkmode & {
+                html.darkmode & {
                     color: #e0e0e0;
                 }
 
                 li {
-                    body.darkmode & {
+                    html.darkmode & {
                         color: #e0e0e0;
                     }
                 }
@@ -65,14 +64,14 @@
             border-radius: 10px;
             filter: brightness(1);
 
-            body.darkmode & {
+            html.darkmode & {
                 filter: brightness(0.9);
             }
 
             &:hover {
                 transform: translateY(30px);
 
-                body.darkmode & {
+                html.darkmode & {
                     filter: brightness(1.1);
                 }
             }
@@ -91,7 +90,7 @@
         margin-left: 15em;
         margin-top: 10px;
 
-        body.darkmode & {
+        html.darkmode & {
             background-color: #333333;
             color: #ffffff;
         }
@@ -100,7 +99,7 @@
             background: rgb(242, 246, 246);
             transform: scale(1.15);
 
-            body.darkmode & {
+            html.darkmode & {
                 background: #555555;
             }
         }
@@ -109,7 +108,7 @@
             background-color: antiquewhite;
             transform: scale(1.05);
 
-            body.darkmode & {
+            html.darkmode & {
                 background-color: #444444;
             }
         }

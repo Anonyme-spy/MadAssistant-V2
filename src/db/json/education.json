@@ -1,0 +1,24 @@
+{
+  "1": {
+    "nom": "Centre de Santé Analakely",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 34 12 345 01",
+    "colorClass": "green",
+    "imgSrc": "/images/santer.jpg",
+    "title": "Centre de Santé Analakely",
+    "subtitle": "Soins préventifs",
+    "description": "Centre de soins préventifs offrant consultations générales et vaccinations.",
+    "tags": ["Prévention", "Vaccination", "Consultations"]
+  },
+  "2": {
+    "nom": "Dispensaire Anosy",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 33 23 234 56",
+    "colorClass": "green",
+    "imgSrc": "/images/santer.jpg",
+    "title": "Dispensaire Anosy",
+    "subtitle": "Soins de base",
+    "description": "Dispensaire offrant des soins de base et un suivi médical régulier.",
+    "tags": ["Soins", "Suivi", "Médical"]
+  }
+}

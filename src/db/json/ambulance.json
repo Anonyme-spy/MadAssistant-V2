@@ -1,0 +1,93 @@
+{
+  "1": {
+    "nom": "Ambulance Urgence Plus",
+    "localisation": "Antananarivo, Centre-ville",
+    "telephone": "+261 34 12 345 67",
+    "disponibilite": "24/7",
+    "instructions": "Appeler en cas d'urgence médicale.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Urgence Plus",
+    "subtitle": "24/7",
+    "description": "Appeler en cas d'urgence médicale. Localisation: Antananarivo, Centre-ville. Téléphone: +261 34 12 345 67",
+    "tags": ["24/7", "Urgence", "Centre-ville"]
+  },
+  "2": {
+    "nom": "Ambulance Vita Soa",
+    "localisation": "Toamasina, Quartier administratif",
+    "telephone": "+261 33 22 987 65",
+    "disponibilite": "7j/7",
+    "instructions": "Disponible pour transport médicalisé longue distance.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Vita Soa",
+    "subtitle": "7j/7",
+    "description": "Disponible pour transport médicalisé longue distance. Localisation: Toamasina, Quartier administratif. Téléphone: +261 33 22 987 65",
+    "tags": ["7j/7", "Transport", "Longue distance"]
+  },
+  "3": {
+    "nom": "Ambulance Rapide Secours",
+    "localisation": "Mahajanga, Hôpital Principal",
+    "telephone": "+261 32 78 654 32",
+    "disponibilite": "24/7",
+    "instructions": "Intervention rapide en cas d'accident.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Rapide Secours",
+    "subtitle": "24/7",
+    "description": "Intervention rapide en cas d'accident. Localisation: Mahajanga, Hôpital Principal. Téléphone: +261 32 78 654 32",
+    "tags": ["24/7", "Intervention rapide", "Accident"]
+  },
+  "4": {
+    "nom": "Ambulance Aro Aina",
+    "localisation": "Fianarantsoa, Centre médical Andohalo",
+    "telephone": "+261 34 56 789 10",
+    "disponibilite": "24h/24",
+    "instructions": "Prise en charge des urgences vitales.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Aro Aina",
+    "subtitle": "24h/24",
+    "description": "Prise en charge des urgences vitales. Localisation: Fianarantsoa, Centre médical Andohalo. Téléphone: +261 34 56 789 10",
+    "tags": ["24h/24", "Urgences vitales", "Fianarantsoa"]
+  },
+  "5": {
+    "nom": "Ambulance Hazo Mamy",
+    "localisation": "Antsirabe, Clinique Rasalama",
+    "telephone": "+261 38 90 123 45",
+    "disponibilite": "Du lundi au samedi",
+    "instructions": "Spécialisée en soins d'urgence pédiatriques.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Hazo Mamy",
+    "subtitle": "Lundi au samedi",
+    "description": "Spécialisée en soins d'urgence pédiatriques. Localisation: Antsirabe, Clinique Rasalama. Téléphone: +261 38 90 123 45",
+    "tags": ["Pédiatrique", "Lundi-Samedi", "Spécialisée"]
+  },
+  "6": {
+    "nom": "Ambulance Manarapenitra",
+    "localisation": "Toliara, Hôpital Régional",
+    "telephone": "+261 32 44 556 78",
+    "disponibilite": "24h/24",
+    "instructions": "Équipée pour les soins intensifs.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Manarapenitra",
+    "subtitle": "24h/24",
+    "description": "Équipée pour les soins intensifs. Localisation: Toliara, Hôpital Régional. Téléphone: +261 32 44 556 78",
+    "tags": ["24h/24", "Soins intensifs", "Toliara"]
+  },
+  "7": {
+    "nom": "Ambulance Samu Madagascar",
+    "localisation": "Diego-Suarez, Centre Médical Nord",
+    "telephone": "+261 34 21 432 10",
+    "disponibilite": "24/7",
+    "instructions": "Assistance médicale et transport d'urgence.",
+    "colorClass": "red",
+    "imgSrc": "/images/ambulance.jpg",
+    "title": "Ambulance Samu Madagascar",
+    "subtitle": "24/7",
+    "description": "Assistance médicale et transport d'urgence. Localisation: Diego-Suarez, Centre Médical Nord. Téléphone: +261 34 21 432 10",
+    "tags": ["24/7", "SAMU", "Transport d'urgence"]
+  }
+}

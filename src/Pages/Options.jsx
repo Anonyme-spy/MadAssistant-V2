@@ -1,43 +1,42 @@
-import { useEffect, useState } from "react";
 import "../css/option.scss";
-import OptionCard from "../components/OptionCard";
-import $clamp from "clamp-js";
+import OptionCard from "../components/OptionCard.jsx";
 
 const Options = () => {
-  const [cardsData, setCardsData] = useState({});
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    window.$clamp = $clamp;
-  }, []);
-
-  const fetchCard = async () => {
-    try {
-      const response = await fetch("http://localhost:3210/api/cards");
-      const data = await response.json();
-      return data.CardData || data || {};
-    } catch (error) {
-      console.error("Erreur API:", error);
-      return {};
-    }
-  };
-
-  useEffect(() => {
-    fetchCard().then((data) => {
-      setCardsData(data);
-      setLoading(false);
-    });
-  }, []);
-
-  if (loading) return <div>Chargement...</div>;
-  if (Object.keys(cardsData).length === 0)
-    return <div>Aucune carte trouvée</div>;
-
   return (
-    <div className="projcard-container">
-      {Object.values(cardsData).map((card, index) => (
-        <OptionCard key={index} {...card} />
-      ))}
+    <div className="option-page">
+      <section>
+        <h2>
+          leading companies
+          <br />
+          have trusted us
+        </h2>
+        <div className="container">
+          <OptionCard
+            image="/images/docteur.jpg"
+            title="Docteur"
+            description="Fill out the form and the algorithm will offer the right team of experts"
+            tags={["Doctora", "Amboijatovo", "Clinic"]}
+            color="#f0f8ff"
+            link="#"
+          />
+          <OptionCard
+            image="/images/Police.jpg"
+            title="Police"
+            description="Development of custom mobile applications"
+            tags={["Securité", "Aide"]}
+            color="#fff5ee"
+            link="#"
+          />
+          <OptionCard
+            image="/images/santer.jpg"
+            title="Hospital"
+            description="Modern and responsive web design solutions"
+            tags={["Urgence"]}
+            color="#f0fff0"
+            link="#"
+          />
+        </div>
+      </section>
     </div>
   );
 };

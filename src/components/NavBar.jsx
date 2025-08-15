@@ -44,7 +44,7 @@ const NavBar = () => {
       <nav className="navbar container">
         <div className="navbar-brand">
           <img src={"/logo.png"} alt={"ispm logo"} width={50} height={50} />
-          <a href="#" className="brand">
+          <a href="#options-section" className="brand">
             MADASSISTANT
           </a>
         </div>
@@ -69,9 +69,15 @@ const NavBar = () => {
             </li>
             <li className="menu-item">
               <NavLink
-                to={"/option"}
+                to="/"
                 className="menu-link"
-                onClick={handleMenuLinkClick}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleMenuLinkClick();
+                  document
+                    .getElementById("options-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Options
               </NavLink>
