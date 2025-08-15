@@ -25,11 +25,18 @@
 
 .projcard-container {
   margin: 0 auto;
-  padding-top: 2.5rem;
-  width: 1000px;
+  padding: 2.5rem 1rem;
+  max-width: 1000px;
+  width: 100%;
 
   &, * {
     box-sizing: border-box;
+  }
+
+  h1 {
+    color: var(--card-text);
+    text-align: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -89,6 +96,7 @@
     width: 400px;
     top: 0;
     left: 0;
+    object-fit: cover;
     transition: transform 0.2s ease;
 
     .projcard:nth-child(2n) & {
@@ -146,11 +154,13 @@
     font-family: 'Voces', 'Open Sans', arial, sans-serif;
     font-size: 24px;
     color: var(--card-text);
+    margin-bottom: 5px;
   }
 
   &-subtitle {
     font-family: 'Voces', 'Open Sans', arial, sans-serif;
     color: var(--card-subtitle);
+    margin-bottom: 10px;
   }
 
   &-bar {
@@ -170,6 +180,7 @@
     height: 125px;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.4;
   }
 
   &-tagbox {
@@ -262,13 +273,32 @@
 /* Media queries pour la responsivité */
 @media screen and (max-width: 1020px) {
   .projcard-container {
-    width: 95%;
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projcard {
+    &-textbox {
+      left: 350px;
+      width: calc(100% - 380px);
+    }
+
+    .projcard:nth-child(2n) &-textbox {
+      right: 350px;
+    }
+
+    &-img {
+      width: 320px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .projcard {
     height: auto;
+    min-height: 400px;
+    display: flex;
     flex-direction: column;
 
     &-img {
@@ -280,17 +310,68 @@
 
     &-textbox {
       position: relative;
-      left: 0;
-      width: 100%;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
       padding: 20px;
+      top: 0;
+      bottom: 0;
+      height: auto;
 
       &::before, &::after {
-        display: none;
+        display: none !important;
       }
     }
 
     &:nth-child(2n) .projcard-textbox {
       right: 0;
+      left: 0;
+    }
+
+    &-description {
+      height: auto;
+      max-height: 120px;
+      margin-bottom: 15px;
+    }
+
+    &-tagbox {
+      position: relative;
+      bottom: auto;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projcard-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .projcard {
+    margin-bottom: 30px;
+    min-height: 350px;
+
+    &-textbox {
+      padding: 15px;
+    }
+
+    &-title {
+      font-size: 20px;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+    }
+
+    &-description {
+      font-size: 14px;
+      max-height: 100px;
+    }
+
+    &-tag {
+      font-size: 12px;
+      margin-right: 10px;
+      margin-bottom: 5px;
     }
   }
 }

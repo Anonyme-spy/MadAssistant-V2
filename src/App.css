@@ -62,3 +62,7 @@
    .btn img {
        filter: hue-rotate(180deg) saturate(2); // Changes hue
    } */
+
+.projcard-container {
+    padding-top: 6rem !important;
+}

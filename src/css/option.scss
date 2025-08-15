@@ -186,3 +186,23 @@
     }
   }
 }
+
+.option-page {
+  // ... autres styles existants
+
+  html.darkmode & {
+    color: var(--color-white-100);
+
+    section {
+      color: var(--color-white-100);
+    }
+
+    .container .card .content p {
+      color: #b0b0b0;
+    }
+
+    .container .card .box {
+      background: var(--color-dark-card, #2a2a2a);
+    }
+  }
+}

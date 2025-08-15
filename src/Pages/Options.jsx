@@ -6,34 +6,33 @@ const Options = () => {
     <div className="option-page">
       <section>
         <h2>
-          leading companies
-          <br />
-          have trusted us
+          Services d'urgence
+          <br />à votre disposition
         </h2>
         <div className="container">
           <OptionCard
             image="/images/docteur.jpg"
             title="Docteur"
-            description="Fill out the form and the algorithm will offer the right team of experts"
-            tags={["Doctora", "Amboijatovo", "Clinic"]}
+            description="Trouvez rapidement un médecin près de chez vous pour vos consultations médicales"
+            tags={["Médecin", "Consultation", "Santé"]}
             color="#f0f8ff"
-            link="#"
+            link="/Medical"
           />
           <OptionCard
             image="/images/Police.jpg"
             title="Police"
-            description="Development of custom mobile applications"
-            tags={["Securité", "Aide"]}
+            description="Contactez les forces de l'ordre en cas d'urgence ou pour signaler un incident"
+            tags={["Sécurité", "Urgence", "Protection"]}
             color="#fff5ee"
-            link="#"
+            link="/Police"
           />
           <OptionCard
             image="/images/santer.jpg"
-            title="Hospital"
-            description="Modern and responsive web design solutions"
-            tags={["Urgence"]}
+            title="Hôpital"
+            description="Accédez aux services hospitaliers et centres de soins d'urgence"
+            tags={["Urgence", "Soins", "Hôpital"]}
             color="#f0fff0"
-            link="#"
+            link="/Hospital"
           />
         </div>
       </section>

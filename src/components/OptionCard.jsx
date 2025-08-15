@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const OptionCard = ({
   image = "/S.png",
   title = "Default Title",
@@ -24,9 +26,9 @@ const OptionCard = ({
             <img src={image} alt={title} />
           </div>
           <div className="icon">
-            <a href={link} className="iconBox">
+            <NavLink to={link} className="iconBox">
               <i className="fas fa-external-link-alt"></i>
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

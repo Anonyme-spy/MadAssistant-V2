@@ -14,6 +14,7 @@ import Sante from "./Pages/Page/Sante.jsx";
 import Securite from "./Pages/Page/Securite.jsx";
 import Education from "./Pages/Page/Education.jsx";
 import Ambulance from "./Pages/Page/Ambulance.jsx";
+import Contacts from "./Pages/Contacts.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Contacts" element={<Contacts />} />
         <Route path="/category" element={<Category />} />
         <Route path="/element" element={<Element />} />
         <Route path="/hospital" element={<Hospital />} />
