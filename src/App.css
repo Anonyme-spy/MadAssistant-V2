@@ -63,6 +63,11 @@
        filter: hue-rotate(180deg) saturate(2); // Changes hue
    } */
 
-.projcard-container {
+.projcard-container, #contact {
     padding-top: 6rem !important;
 }
+
+button.switch {
+    margin: 0 !important;
+}
+

@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "accueil": "Accueil",
+    "options": "Options",
+    "avantages": "Avantages",
+    "contacts": "Contacts"
+  },
+  "common": {
+    "pageNotFound": "Page Non Trouvée"
+  },
+  "home": {
+    "title": "MadAssistant",
+    "description": "Dans des situations d'urgence, chaque seconde compte. Pourtant, beaucoup de personnes ne savent pas toujours où trouver rapidement les numéros d'urgence ou les informations essentielles.",
+    "downloadApp": "Télécharger l'app",
+    "sectionTitle": "Section"
+  },
+  "about": {
+    "title": "Qu'est-ce que MadAssistant ?",
+    "description": "MadAssistant est un site web conçu pour centraliser et faciliter l'accès aux numéros et contacts d'urgence à Madagascar.",
+    "detailedDescription": "Il est pensé pour être simple d'utilisation, accessible même avec une faible connexion internet, et compatible avec tous les appareils.",
+    "objectivesTitle": "Ses objectifs principaux :",
+    "objectives": {
+      "accessibility": "Rendre les numéros d'urgence plus accessibles, surtout en zones reculées.",
+      "reactionTime": "Réduire le temps de réaction grâce à une interface claire et rapide.",
+      "solution": "Offrir une solution gratuite, moderne et adaptée au contexte local.",
+      "awareness": "Sensibiliser le public à certains services encore méconnus."
+    },
+    "targetTitle": "Le public visé :",
+    "target": {
+      "citizens": "Les citoyens ayant besoin d'un contact d'urgence.",
+      "tourists": "Les touristes ne connaissant pas les services disponibles.",
+      "professionals": "Les professionnels de la santé et de la sécurité pour un accès rapide aux contacts utiles.",
+      "organizations": "Les administrations et ONG pour coordonner leurs interventions."
+    }
+  },
+  "options": {
+    "title": "Services d'urgence",
+    "subtitle": "à votre disposition",
+    "viewMore": "Voir plus",
+    "services": {
+      "doctor": {
+        "title": "Docteur",
+        "description": "Trouvez rapidement un médecin près de chez vous pour vos consultations médicales",
+        "tags": ["Médecin", "Consultation", "Santé"]
+      },
+      "police": {
+        "title": "Police",
+        "description": "Contactez les forces de l'ordre en cas d'urgence ou pour signaler un incident",
+        "tags": ["Sécurité", "Urgence", "Protection"]
+      },
+      "hospital": {
+        "title": "Hôpital",
+        "description": "Accédez aux services hospitaliers et centres de soins d'urgence",
+        "tags": ["Urgence", "Soins", "Hôpital"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "namePlaceholder": "Nom",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Votre message...",
+      "sendButton": "Envoyer",
+      "sending": "Envoi...",
+      "successMessage": "Message envoyé avec succès !",
+      "errorMessage": "Erreur lors de l'envoi du message."
+    },
+    "info": {
+      "location": "Madagascar",
+      "callTitle": "Nous appeler",
+      "emailTitle": "Envoyer un email"
+    },
+    "copyright": "Tous droits réservés"
+  }
+}

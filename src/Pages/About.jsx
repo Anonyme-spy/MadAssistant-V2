@@ -1,53 +1,46 @@
 import "../css/cesily.scss";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="about-section">
         <div className="Apropos">
           <div className="paragraphe">
-            <h1>Qu'est-ce que MadAssistant ? </h1>
+            <h1>{t("about.title")}</h1>
             <nav>
-              MadAssistant est un site web conçu pour centraliser et faciliter
-              l'accès aux numéros et contacts d'urgence à Madagascar. <br />
-              Il est pensé pour être simple d'utilisation, accessible même avec
-              une faible connexion internet, et compatible avec tous les
-              appareils. <br />
+              {t("about.description")} <br />
+              {t("about.detailedDescription")} <br />
               <ul>
-                Ses objectifs principaux : <br />
+                {t("about.objectivesTitle")} <br />
                 <li>
-                  Rendre les numéros d'urgence plus accessibles, surtout en
-                  zones reculées. <br />
+                  {t("about.objectives.accessibility")} <br />
                 </li>
                 <li>
-                  Réduire le temps de réaction grâce à une interface claire et
-                  rapide. <br />
+                  {t("about.objectives.reactionTime")} <br />
                 </li>
                 <li>
-                  Offrir une solution gratuite, moderne et adaptée au contexte
-                  local. <br />
+                  {t("about.objectives.solution")} <br />
                 </li>
                 <li>
-                  Sensibiliser le public à certains services encore méconnus.{" "}
-                  <br />
+                  {t("about.objectives.awareness")} <br />
                 </li>
               </ul>
               <ul>
-                Le public visé : <br />
+                {t("about.targetTitle")} <br />
                 <li>
-                  Les citoyens ayant besoin d'un contact d'urgence. <br />
+                  {t("about.target.citizens")} <br />
                 </li>
                 <li>
-                  Les touristes ne connaissant pas les services disponibles.{" "}
-                  <br />
+                  {t("about.target.tourists")} <br />
                 </li>
                 <li>
-                  Les professionnels de la santé et de la sécurité pour un accès
-                  rapide aux contacts utiles. <br />
+                  {t("about.target.professionals")} <br />
                 </li>
                 <li>
-                  Les administrations et ONG pour coordonner leurs
-                  interventions. <br />
+                  {t("about.target.organizations")} <br />
                 </li>
               </ul>
             </nav>

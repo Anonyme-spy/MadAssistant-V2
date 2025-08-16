@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "../css/contacts.scss";
 
 const Contacts = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,9 +53,9 @@ const Contacts = () => {
 
     if (success) {
       setFormData({ name: "", email: "", message: "" });
-      alert("Message envoyé avec succès !");
+      alert(t("contact.form.successMessage"));
     } else {
-      alert("Erreur lors de l'envoi du message.");
+      alert(t("contact.form.errorMessage"));
     }
 
     setIsSubmitting(false);
@@ -61,7 +63,7 @@ const Contacts = () => {
 
   return (
     <section className="contact-body" id="contact">
-      <h1 className="section-header">Contact</h1>
+      <h1 className="section-header">{t("contact.title")}</h1>
 
       <div className="contact-wrapper">
         <form
@@ -76,7 +78,7 @@ const Contacts = () => {
                 type="text"
                 className="form-control"
                 id="name"
-                placeholder="Nom"
+                placeholder={t("contact.form.namePlaceholder")}
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
@@ -92,7 +94,7 @@ const Contacts = () => {
                 type="email"
                 className="form-control"
                 id="email"
-                placeholder="Email"
+                placeholder={t("contact.form.emailPlaceholder")}
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
@@ -105,7 +107,7 @@ const Contacts = () => {
           <textarea
             className="form-control"
             rows="10"
-            placeholder="Votre message..."
+            placeholder={t("contact.form.messagePlaceholder")}
             name="message"
             value={formData.message}
             onChange={handleChange}
@@ -122,7 +124,9 @@ const Contacts = () => {
             <div className="alt-send-button">
               <i className="fa fa-paper-plane"></i>
               <span className="send-text">
-                {isSubmitting ? "Envoi..." : "Envoyer"}
+                {isSubmitting
+                  ? t("contact.form.sending")
+                  : t("contact.form.sendButton")}
               </span>
             </div>
           </button>
@@ -132,14 +136,19 @@ const Contacts = () => {
           <ul className="contact-list">
             <li className="list-item">
               <i className="fa fa-map-marker fa-2x">
-                <span className="contact-text place">Madagascar</span>
+                <span className="contact-text place">
+                  {t("contact.info.location")}
+                </span>
               </i>
             </li>
 
             <li className="list-item">
               <i className="fa fa-phone fa-2x">
                 <span className="contact-text phone">
-                  <a href="tel:+261300000000" title="Nous appeler">
+                  <a
+                    href="tel:+261300000000"
+                    title={t("contact.info.callTitle")}
+                  >
                     +2613000000
                   </a>
                 </span>
@@ -151,7 +160,7 @@ const Contacts = () => {
                 <span className="contact-text gmail">
                   <a
                     href="mailto:madassistant13@gmail.com"
-                    title="Envoyer un email"
+                    title={t("contact.info.emailTitle")}
                   >
                     madassistant13@gmail.com
                   </a>
@@ -166,6 +175,7 @@ const Contacts = () => {
               href="https://web.facebook.com/profile.php?id=61576297390781&locale=fr_FR"
               target="_blank"
               className="contact-icon"
+              rel="noopener noreferrer"
             >
               <li>
                 <i className="fa-brands fa-facebook"></i>
@@ -175,13 +185,19 @@ const Contacts = () => {
               href="https://www.instagram.com/madassistant13/?utm_source=ig_web_button_share_sheet"
               target="_blank"
               className="contact-icon"
+              rel="noopener noreferrer"
             >
               <li>
                 <i className="fa-brands fa-instagram"></i>
               </li>
             </a>
 
-            <a href="https://x.com" target="_blank" className="contact-icon">
+            <a
+              href="https://x.com"
+              target="_blank"
+              className="contact-icon"
+              rel="noopener noreferrer"
+            >
               <li>
                 <i className="fa-brands fa-x-twitter"></i>
               </li>
@@ -189,7 +205,7 @@ const Contacts = () => {
           </ul>
 
           <div className="copyright">
-            &copy;2025 MadAssistant - Tous droits réservés
+            &copy;2025 MadAssistant - {t("contact.copyright")}
           </div>
         </div>
       </div>

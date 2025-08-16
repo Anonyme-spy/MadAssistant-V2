@@ -1,8 +1,6 @@
-// Mise à jour de parallax.scss avec optimisations de performance
 .parallax-container {
   overflow-y: auto;
   height: 100vh;
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -16,6 +14,11 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  // Activer scroll-snap uniquement pendant la navigation avec les dots
+  &.navigation-active {
+    scroll-snap-type: y mandatory;
+  }
 }
 
 .parallax-section {
@@ -27,7 +30,6 @@
   scroll-snap-align: start;
   position: relative;
   overflow: hidden;
-  // Retirer will-change pour réduire la consommation mémoire
   transition: background-color 0.4s ease;
 
   &::before {
@@ -58,22 +60,47 @@
   }
 }
 
+// Créer une zone spéciale pour les interactions utilisateur
+.options-section {
+  background: linear-gradient(135deg,
+          #fafafa 0%,
+          #f8fafc 50%,
+          var(--color-white-200) 100%);
+
+  html.darkmode & {
+    background: linear-gradient(135deg,
+            var(--color-black-200) 0%,
+            var(--color-black-300) 50%,
+            var(--color-black-400) 100%);
+  }
+
+  // Désactiver temporairement le scroll-snap lors d'interactions
+  &.interaction-mode {
+    scroll-snap-align: none;
+  }
+
+  .option-page {
+    background: transparent;
+    min-height: 100vh;
+
+    section {
+      padding-block: min(10vh, 2rem);
+    }
+  }
+}
+
 .section-content {
   width: 100%;
   max-width: 1200px;
   padding: 2rem;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-  opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  margin: 0 auto;
+  transition: opacity 0.6s ease;
 
   &.animate-in {
-    transform: translateY(0);
     opacity: 1;
   }
 }
 
-// Sections avec backgrounds différenciés et optimisés
 .banner-section {
   background: linear-gradient(135deg,
           var(--color-white-100) 0%,
@@ -87,27 +114,14 @@
             var(--color-black-200) 100%);
   }
 
-  .section-content {
-    transition-delay: 0.1s;
-  }
-
-  .banner-inner {
-    // Utiliser transform uniquement pendant l'animation
-    animation: slideInFromLeft 1s ease-out forwards;
-  }
-
   .banner-image {
-    animation: slideInFromRight 1s ease-out forwards;
     border-radius: 12px;
     box-shadow: var(--shadow-large);
-    transition: filter 0.3s ease, transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
 
     html.darkmode & {
       filter: brightness(0.85) contrast(1.1);
-    }
-
-    &:hover {
-      transform: scale(1.02);
     }
   }
 }
@@ -124,55 +138,9 @@
             var(--color-black-400) 50%,
             var(--color-black-200) 100%);
   }
-
-  .section-content {
-    transition-delay: 0.2s;
-  }
-
-  // Optimisation pour le composant About
-  .about-section {
-    background: transparent;
-    color: var(--color-black-400);
-
-    html.darkmode & {
-      color: var(--color-white-100);
-    }
-  }
 }
 
-.options-section {
-  background: linear-gradient(135deg,
-          #fafafa 0%,
-          #f8fafc 50%,
-          var(--color-white-200) 100%);
-
-  html.darkmode & {
-    background: linear-gradient(135deg,
-            var(--color-black-200) 0%,
-            var(--color-black-300) 50%,
-            var(--color-black-400) 100%);
-  }
-
-  .section-content {
-    transition-delay: 0.3s;
-  }
-
-  .option-page {
-    background: transparent;
-    color: var(--color-black-400);
-
-    html.darkmode & {
-      color: var(--color-white-100);
-    }
-  }
-
-  .projcard-container {
-    // Animation optimisée
-    animation: fadeInUp 1s ease-out forwards;
-  }
-}
-
-// Navigation dots optimisée
+// Navigation dots
 .section-navigation {
   position: fixed;
   right: 2rem;
@@ -182,6 +150,11 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    right: 1rem;
+    gap: 1rem;
+  }
 }
 
 .nav-dot {
@@ -217,72 +190,39 @@
       background: rgba(255, 255, 255, 0.5);
     }
   }
-}
 
-// Animations optimisées avec performance
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-60px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  @media (max-width: 768px) {
+    width: 10px;
+    height: 10px;
   }
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(60px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-// Responsive optimisé
+// Mobile et responsive
 @media (max-width: 768px) {
+  .parallax-container {
+    height: auto;
+    min-height: 100vh;
+  }
+
   .parallax-section {
     min-height: 100vh;
+    padding: 1rem 0;
+
+    // Espacer les sections sur mobile
+    &:not(:last-child) {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+
+      html.darkmode & {
+        border-bottom-color: rgba(255, 255, 255, 0.1);
+      }
+    }
   }
 
   .section-content {
     padding: 1rem;
-    transform: translateY(15px);
-  }
-
-  .section-navigation {
-    right: 1rem;
-    gap: 1.2rem;
-  }
-
-  .nav-dot {
-    width: 10px;
-    height: 10px;
-  }
-
-  // Réduire la durée des animations sur mobile
-  .banner-inner,
-  .banner-image,
-  .projcard-container {
-    animation-duration: 0.6s;
   }
 }
 
-// Désactiver les animations pour les utilisateurs préférant moins de mouvement
 @media (prefers-reduced-motion: reduce) {
   .parallax-container {
     scroll-behavior: auto;
@@ -292,24 +232,5 @@
   .parallax-section::before,
   .nav-dot {
     transition: none;
-  }
-
-  .banner-inner,
-  .banner-image,
-  .projcard-container {
-    animation: none;
-    transform: none;
-    opacity: 1;
-  }
-}
-
-// Optimisation pour les GPU moins puissants
-@media (max-resolution: 1dppx) {
-  .parallax-section::before {
-    background: none;
-  }
-
-  .banner-image {
-    box-shadow: var(--shadow-medium);
   }
 }

@@ -471,3 +471,384 @@ video {
     box-shadow: 0 10px 25px rgba(0, 100, 0, 0.3);
   }
 }
+.language-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  width: 3rem;
+  height: 2.2rem;
+  border: 2px solid var(--color-blue-500);
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, transparent 0%, var(--color-blue-100) 100%);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  html.darkmode & {
+    border-color: var(--color-white-100);
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+  }
+
+  &:hover {
+    background: var(--color-blue-500);
+    border-color: var(--color-blue-600);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(21, 94, 239, 0.4);
+
+    html.darkmode & {
+      background: var(--color-white-100);
+      box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    }
+
+    &::before {
+      left: 100%;
+    }
+
+    .language-text {
+      color: var(--color-white-100);
+      transform: scale(1.1);
+
+      html.darkmode & {
+        color: var(--color-black-400);
+      }
+    }
+
+    .language-icon {
+      animation: bounce 0.6s ease-in-out;
+    }
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.98);
+  }
+}
+
+.language-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-blue-500);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+
+  html.darkmode & {
+    color: var(--color-white-100);
+  }
+}
+
+.language-icon {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-blue-500);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  html.darkmode & {
+    background: var(--color-white-100);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+}
+
+// Amélioration de l'espacement pour éviter la collision avec "contacts"
+.navbar {
+  .flex {
+    margin-left: auto;
+    gap: 1rem;
+
+    @media screen and (max-width: 768px) {
+      gap: 0.75rem;
+    }
+  }
+}
+
+// Optimisations spécifiques pour petits écrans dans Hero.scss
+
+.navbar {
+  padding: 0 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0.75rem;
+    height: 3.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0.5rem;
+    height: 3.25rem;
+  }
+}
+
+.navbar-brand {
+  flex-shrink: 0;
+
+  img {
+    @media screen and (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.brand {
+  @media screen and (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.9rem;
+  }
+}
+
+.flex {
+  gap: 1rem;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 768px) {
+    gap: 0.75rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 0.5rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    gap: 0.375rem;
+  }
+
+  img {
+    @media screen and (max-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @media screen and (max-width: 360px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.language-switch {
+  @media screen and (max-width: 768px) {
+    width: 2.5rem;
+    height: 1.8rem;
+    border-width: 1.5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 2.25rem;
+    height: 1.6rem;
+    border-width: 1px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 2rem;
+    height: 1.4rem;
+  }
+
+  &:hover {
+    @media screen and (max-width: 768px) {
+      transform: translateY(-1px) scale(1.02);
+      box-shadow: 0 4px 15px rgba(21, 94, 239, 0.3);
+    }
+  }
+}
+
+.language-text {
+  @media screen and (max-width: 768px) {
+    font-size: 0.65rem;
+    letter-spacing: 0.3px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 0.6rem;
+    letter-spacing: 0.2px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 0.55rem;
+  }
+}
+
+.language-icon {
+  @media screen and (max-width: 768px) {
+    width: 6px;
+    height: 6px;
+    top: -1px;
+    right: -1px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 5px;
+    height: 5px;
+  }
+}
+
+.switch {
+  width: 2rem;
+  height: 2rem;
+
+  @media screen and (max-width: 768px) {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-left: 1.5rem;
+  }
+
+  &-light {
+    @media screen and (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.1rem;
+    }
+  }
+
+  &-dark {
+    html.darkmode & {
+      @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.burger {
+  margin-right: 1.25rem;
+
+  @media screen and (max-width: 480px) {
+    width: 1.4rem;
+    height: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    margin-right: 0.75rem;
+  }
+
+  &-line {
+    @media screen and (max-width: 480px) {
+      height: 1.5px;
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width: 480px) {
+        top: 0.425rem;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (max-width: 480px) {
+        top: 0.85rem;
+      }
+    }
+  }
+
+  &.is-active .burger-line {
+    &:nth-child(1) {
+      @media screen and (max-width: 480px) {
+        top: 0.425rem;
+      }
+    }
+
+    &:nth-child(3) {
+      @media screen and (max-width: 480px) {
+        top: 0.425rem;
+      }
+    }
+  }
+}
+
+// Ajout d'une classe utilitaire pour éviter le débordement
+.navbar .flex.items-center {
+  min-width: 0; // Permet la contraction des éléments flex si nécessaire
+}
+
+// S'assurer que les éléments ne débordent pas sur très petits écrans
+@media screen and (max-width: 320px) {
+  .brand {
+    font-size: 0.8rem;
+  }
+
+  .language-switch {
+    width: 1.75rem;
+    height: 1.25rem;
+  }
+
+  .language-text {
+    font-size: 0.5rem;
+  }
+
+  .switch {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 1rem;
+  }
+
+  .flex img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .burger {
+    width: 1.2rem;
+    height: 0.85rem;
+    margin-right: 0.5rem;
+  }
+}

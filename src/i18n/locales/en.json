@@ -1,0 +1,76 @@
+{
+  "nav": {
+    "accueil": "Home",
+    "options": "Options",
+    "avantages": "Benefits",
+    "contacts": "Contacts"
+  },
+  "common": {
+    "pageNotFound": "Page Not Found"
+  },
+  "home": {
+    "title": "MadAssistant",
+    "description": "In emergency situations, every second counts. However, many people don't always know where to quickly find emergency numbers or essential information.",
+    "downloadApp": "Download the app",
+    "sectionTitle": "Section"
+  },
+  "about": {
+    "title": "What is MadAssistant?",
+    "description": "MadAssistant is a website designed to centralize and facilitate access to emergency numbers and contacts in Madagascar.",
+    "detailedDescription": "It is designed to be simple to use, accessible even with a low internet connection, and compatible with all devices.",
+    "objectivesTitle": "Its main objectives:",
+    "objectives": {
+      "accessibility": "Make emergency numbers more accessible, especially in remote areas.",
+      "reactionTime": "Reduce reaction time through a clear and fast interface.",
+      "solution": "Provide a free, modern solution adapted to the local context.",
+      "awareness": "Raise public awareness of some still unknown services."
+    },
+    "targetTitle": "Target audience:",
+    "target": {
+      "citizens": "Citizens needing emergency contact.",
+      "tourists": "Tourists unfamiliar with available services.",
+      "professionals": "Health and security professionals for quick access to useful contacts.",
+      "organizations": "Administrations and NGOs to coordinate their interventions."
+    }
+  },
+  "options": {
+    "title": "Emergency services",
+    "subtitle": "at your disposal",
+    "viewMore": "View more",
+    "services": {
+      "doctor": {
+        "title": "Doctor",
+        "description": "Quickly find a doctor near you for your medical consultations",
+        "tags": ["Doctor", "Consultation", "Health"]
+      },
+      "police": {
+        "title": "Police",
+        "description": "Contact law enforcement in case of emergency or to report an incident",
+        "tags": ["Security", "Emergency", "Protection"]
+      },
+      "hospital": {
+        "title": "Hospital",
+        "description": "Access hospital services and emergency care centers",
+        "tags": ["Emergency", "Care", "Hospital"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "Email",
+      "messagePlaceholder": "Your message...",
+      "sendButton": "Send",
+      "sending": "Sending...",
+      "successMessage": "Message sent successfully!",
+      "errorMessage": "Error sending message."
+    },
+    "info": {
+      "location": "Madagascar",
+      "callTitle": "Call us",
+      "emailTitle": "Send an email"
+    },
+    "copyright": "All rights reserved"
+  }
+}

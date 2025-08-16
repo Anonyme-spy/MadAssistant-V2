@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import "../css/Hero.scss";
 import "../css/parallax.scss";
 import DownloadIcon from "../assets/download-outline.svg";
@@ -9,6 +10,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState(0);
   const sectionsRef = useRef([]);
   const containerRef = useRef(null);
+  const { t } = useTranslation();
 
   const sections = [
     { id: "banner", component: "banner" },
@@ -36,8 +38,8 @@ export default function Home() {
         });
       },
       {
-        threshold: 0.6,
-        rootMargin: "-5% 0px",
+        threshold: 0.3,
+        rootMargin: "-10% 0px -10% 0px",
       },
     );
 
@@ -45,18 +47,66 @@ export default function Home() {
       if (section) observer.observe(section);
     });
 
+    // Gérer les interactions avec les boutons
+    const handleButtonInteractions = () => {
+      const optionsSection = sectionsRef.current[2];
+      const container = containerRef.current;
+
+      if (optionsSection && container) {
+        // Désactiver scroll-snap pendant les interactions avec les boutons
+        const buttons = optionsSection.querySelectorAll("button, a");
+
+        buttons.forEach((button) => {
+          button.addEventListener("mouseenter", () => {
+            container.style.scrollSnapType = "none";
+            optionsSection.classList.add("interaction-mode");
+          });
+
+          button.addEventListener("mouseleave", () => {
+            // Réactiver après un délai court
+            setTimeout(() => {
+              if (!optionsSection.matches(":hover")) {
+                container.style.scrollSnapType = "y mandatory";
+                optionsSection.classList.remove("interaction-mode");
+              }
+            }, 100);
+          });
+        });
+      }
+    };
+
+    // Observer les changements dans le DOM pour les nouveaux boutons
+    const mutationObserver = new MutationObserver(handleButtonInteractions);
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
+
+    handleButtonInteractions();
+
     return () => {
       sectionsRef.current.forEach((section) => {
         if (section) observer.unobserve(section);
       });
+      mutationObserver.disconnect();
     };
   }, []);
 
   const scrollToSection = (index) => {
-    sectionsRef.current[index]?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const container = containerRef.current;
+    if (container) {
+      // Activer temporairement scroll-snap pour la navigation par dots
+      container.classList.add("navigation-active");
+      container.style.scrollSnapType = "y mandatory";
+
+      sectionsRef.current[index]?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      // Désactiver après la navigation
+      setTimeout(() => {
+        container.classList.remove("navigation-active");
+        container.style.scrollSnapType = "none";
+      }, 1000);
+    }
   };
 
   return (
@@ -68,7 +118,7 @@ export default function Home() {
             key={index}
             className={`nav-dot ${activeSection === index ? "active" : ""}`}
             onClick={() => scrollToSection(index)}
-            title={`Section ${index + 1}`}
+            title={`${t("home.sectionTitle")} ${index + 1}`}
           />
         ))}
       </div>
@@ -87,15 +137,10 @@ export default function Home() {
               alt="Illustration"
             />
             <div className="banner-inner">
-              <h1 className="heading-xl">MadAssistant</h1>
-              <p className="paragraph">
-                Dans des situations d'urgence, chaque seconde compte. Pourtant,
-                beaucoup de personnes ne savent pas toujours où trouver
-                rapidement les numéros d'urgence ou les informations
-                essentielles.
-              </p>
+              <h1 className="heading-xl">{t("home.title")}</h1>
+              <p className="paragraph">{t("home.description")}</p>
               <button className="btn btn-darken btn-inline" id="btn">
-                Télécharger l'app
+                {t("home.downloadApp")}
                 <img src={DownloadIcon} alt="Download" width="24" height="24" />
               </button>
             </div>
