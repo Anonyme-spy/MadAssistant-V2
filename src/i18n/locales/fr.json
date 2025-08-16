@@ -72,5 +72,77 @@
       "emailTitle": "Envoyer un email"
     },
     "copyright": "Tous droits réservés"
+  },
+  "ambulance": {
+    "title": "Services d'Ambulance",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone",
+      "availability": "Disponibilité",
+      "instructions": "Instructions"
+    }
+  },
+  "education": {
+    "title": "Services Éducatifs",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "hospital": {
+    "title": "Hôpitaux",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "medical": {
+    "title": "Médecins",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "nurse": {
+    "title": "Sages-femmes",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "police": {
+    "title": "Services de Police",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "firestation": {
+    "title": "Services de Pompiers",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "health": {
+    "title": "Services de Santé",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "security": {
+    "title": "Services de Sécurité",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
+  },
+  "veterinary": {
+    "title": "Vétérinaires",
+    "fields": {
+      "location": "Localisation",
+      "phone": "Téléphone"
+    }
   }
 }

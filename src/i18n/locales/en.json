@@ -72,5 +72,77 @@
       "emailTitle": "Send an email"
     },
     "copyright": "All rights reserved"
+  },
+  "ambulance": {
+    "title": "Ambulance Services",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone",
+      "availability": "Availability",
+      "instructions": "Instructions"
+    }
+  },
+  "education": {
+  "title": "Educational Services",
+  "fields": {
+    "location": "Location",
+    "phone": "Phone"
+  }
+},
+  "hospital": {
+    "title": "Hospitals",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "medical": {
+    "title": "Doctors",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "nurse": {
+    "title": "Midwives",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "police": {
+    "title": "Police Services",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "firestation": {
+    "title": "Fire Stations",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "health": {
+    "title": "Health Services",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "security": {
+    "title": "Security Services",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
+  },
+  "veterinary": {
+    "title": "Veterinarians",
+    "fields": {
+      "location": "Location",
+      "phone": "Phone"
+    }
   }
 }

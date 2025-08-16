@@ -1,0 +1,114 @@
+{
+  "1": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Jean Rakoto",
+    "subtitle": "Andohalo Clinic",
+    "description": "Doctor in Antananarivo, Manarapenitra Hospital. In case of emergency, call SAMU immediately at 117. Phone: +261 34 12 345 67",
+    "tags": ["Doctor", "Andohalo", "Emergency"]
+  },
+  "2": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Marie Rasoanirina",
+    "subtitle": "Tamatave Clinic",
+    "description": "Doctor in Toamasina, Be Hospital. In case of respiratory distress, go to the clinic urgently. Phone: +261 33 22 987 65",
+    "tags": ["Doctor", "Tamatave", "Respiratory"]
+  },
+  "3": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Hery Mamy",
+    "subtitle": "Reunion Clinic",
+    "description": "Doctor in Antananarivo, Reunion Hospital. Consult urgently for any abdominal surgery. Phone: +261 32 45 678 12",
+    "tags": ["Doctor", "Surgery", "Abdominal"]
+  },
+  "4": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Fanja Rabemananjara",
+    "subtitle": "Befelatanana Clinic",
+    "description": "Doctor in Antananarivo, Befelatanana Hospital. In case of diabetes, consult quickly. Phone: +261 34 56 789 23",
+    "tags": ["Doctor", "Diabetes", "Befelatanana"]
+  },
+  "5": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Lova Razafindrabe",
+    "subtitle": "University Clinic",
+    "description": "Doctor in Antananarivo, University Hospital. Avoid smoking before any consultation. Phone: +261 33 22 111 56",
+    "tags": ["Doctor", "University", "Consultation"]
+  },
+  "6": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Naina Raharivelo",
+    "subtitle": "Ambatolampy Clinic",
+    "description": "Doctor in Antananarivo, Ambatolampy Hospital. Avoid fatty foods before consultation. Phone: +261 34 67 890 45",
+    "tags": ["Doctor", "Ambatolampy", "Nutrition"]
+  },
+  "7": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Soa Rajoelina",
+    "subtitle": "Miandrivazo Clinic",
+    "description": "Doctor in Antananarivo, Miandrivazo Hospital. Consult for any persistent pain. Phone: +261 32 33 444 55",
+    "tags": ["Doctor", "Miandrivazo", "Pain"]
+  },
+  "8": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Aina Raveloson",
+    "subtitle": "Moramanga Clinic",
+    "description": "Doctor in Antananarivo, Moramanga Hospital. Plan a blood test before consultation. Phone: +261 34 56 999 12",
+    "tags": ["Doctor", "Moramanga", "Tests"]
+  },
+  "9": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Mamy Ralison",
+    "subtitle": "Ikopa Clinic",
+    "description": "Doctor in Antananarivo, Ikopa Hospital. For any orthopedic surgery, plan an X-ray. Phone: +261 32 44 555 88",
+    "tags": ["Doctor", "Orthopedics", "X-ray"]
+  },
+  "10": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Hélène Ravelojaona",
+    "subtitle": "Ambohimanarina Clinic",
+    "description": "Doctor in Antananarivo, Ambohimanarina Hospital. In case of cardiovascular problems, consult immediately. Phone: +261 34 56 789 67",
+    "tags": ["Doctor", "Cardiology", "Cardiovascular"]
+  },
+  "11": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Vola Rina",
+    "subtitle": "Anosizato Clinic",
+    "description": "Doctor in Antananarivo, Anosizato Hospital. Avoid physical exertion before consultation. Phone: +261 33 22 345 12",
+    "tags": ["Doctor", "Anosizato", "Physical exertion"]
+  },
+  "12": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Tahina Rajo",
+    "subtitle": "Vohémar Clinic",
+    "description": "Doctor in Antananarivo, Vohémar Hospital. Plan follow-up for chronic diseases. Phone: +261 38 22 345 67",
+    "tags": ["Doctor", "Vohémar", "Chronic"]
+  },
+  "13": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Jean Nirina",
+    "subtitle": "Ivato Clinic",
+    "description": "Doctor in Antananarivo, Ivato Hospital. Cardiology consultation, avoid eating beforehand. Phone: +261 34 56 889 34",
+    "tags": ["Doctor", "Cardiology", "Ivato"]
+  },
+  "14": {
+    "colorClass": "green",
+    "imgSrc": "/images/docteur.jpg",
+    "title": "Dr. Harisoa Rabearivelo",
+    "subtitle": "Tsaralalana Clinic",
+    "description": "Doctor in Antananarivo, Tsaralalana Hospital. Plan an ultrasound before consultation. Phone: +261 33 23 456 78",
+    "tags": ["Doctor", "Tsaralalana", "Ultrasound"]
+  }
+}

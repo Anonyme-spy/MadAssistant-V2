@@ -1,0 +1,24 @@
+{
+  "1": {
+    "nom": "Central Security Service",
+    "localisation": "Antananarivo, Analakely",
+    "telephone": "+261 34 12 345 01",
+    "colorClass": "grey",
+    "imgSrc": "/images/securiter.jpg",
+    "title": "Central Security Service",
+    "subtitle": "Private security",
+    "description": "24/7 private security service. Surveillance, protection of property and people.",
+    "tags": ["Security", "24/7", "Surveillance"]
+  },
+  "2": {
+    "nom": "Security Plus Tana",
+    "localisation": "Antananarivo, Anosy",
+    "telephone": "+261 33 23 234 56",
+    "colorClass": "grey",
+    "imgSrc": "/images/securiter.jpg",
+    "title": "Security Plus Tana",
+    "subtitle": "Close protection",
+    "description": "Specialized in close protection and event security.",
+    "tags": ["Protection", "Events", "Professional"]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Central Police Station",
+    "subtitle": "Analakely",
+    "description": "Police station located in Antananarivo, Analakely. Phone: +261 34 12 345 67",
+    "tags": ["Police", "Station", "Analakely"]
+  },
+  "2": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Mahamasina Police Post",
+    "subtitle": "Mahamasina",
+    "description": "Police post located in Antananarivo, Mahamasina. Phone: +261 33 22 987 65",
+    "tags": ["Police", "Post", "Mahamasina"]
+  },
+  "3": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Ambohimanarina Gendarmerie Brigade",
+    "subtitle": "Gendarmerie - Ambohimanarina",
+    "description": "Gendarmerie brigade located in Antananarivo, Ambohimanarina. Phone: +261 32 78 654 32",
+    "tags": ["Gendarmerie", "Brigade", "Ambohimanarina"]
+  },
+  "4": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Tsaralalàna Police Station",
+    "subtitle": "Tsaralalàna",
+    "description": "Police station located in Antananarivo, Tsaralalàna. Phone: +261 34 56 789 10",
+    "tags": ["Police", "Station", "Tsaralalàna"]
+  },
+  "5": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "67Ha Police Post",
+    "subtitle": "67Ha",
+    "description": "Police post located in Antananarivo, 67Ha. Phone: +261 38 90 123 45",
+    "tags": ["Police", "Post", "67Ha"]
+  },
+  "6": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Andavamamba Police Post",
+    "subtitle": "Andavamamba",
+    "description": "Police post located in Antananarivo, Andavamamba. Phone: +261 32 44 556 78",
+    "tags": ["Police", "Post", "Andavamamba"]
+  },
+  "7": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Anosy Police Station",
+    "subtitle": "Anosy",
+    "description": "Police station located in Antananarivo, Anosy. Phone: +261 34 21 432 10",
+    "tags": ["Police", "Station", "Anosy"]
+  },
+  "8": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Itaosy Gendarmerie Brigade",
+    "subtitle": "Gendarmerie - Itaosy",
+    "description": "Gendarmerie brigade located in Antananarivo, Itaosy. Phone: +261 33 45 678 90",
+    "tags": ["Gendarmerie", "Brigade", "Itaosy"]
+  },
+  "9": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Ampefiloha Police Post",
+    "subtitle": "Ampefiloha",
+    "description": "Police post located in Antananarivo, Ampefiloha. Phone: +261 34 98 765 43",
+    "tags": ["Police", "Post", "Ampefiloha"]
+  },
+  "10": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Ambanidia Police Station",
+    "subtitle": "Ambanidia",
+    "description": "Police station located in Antananarivo, Ambanidia. Phone: +261 32 56 432 19",
+    "tags": ["Police", "Station", "Ambanidia"]
+  },
+  "11": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Andohalo Police Post",
+    "subtitle": "Andohalo",
+    "description": "Police post located in Antananarivo, Andohalo. Phone: +261 38 12 876 54",
+    "tags": ["Police", "Post", "Andohalo"]
+  },
+  "12": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Ankazomanga Gendarmerie Brigade",
+    "subtitle": "Gendarmerie - Ankazomanga",
+    "description": "Gendarmerie brigade located in Antananarivo, Ankazomanga. Phone: +261 34 22 345 78",
+    "tags": ["Gendarmerie", "Brigade", "Ankazomanga"]
+  },
+  "13": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Anjanahary Police Post",
+    "subtitle": "Anjanahary",
+    "description": "Police post located in Antananarivo, Anjanahary. Phone: +261 32 65 987 21",
+    "tags": ["Police", "Post", "Anjanahary"]
+  },
+  "14": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Mandroseza Police Station",
+    "subtitle": "Mandroseza",
+    "description": "Police station located in Antananarivo, Mandroseza. Phone: +261 33 89 210 65",
+    "tags": ["Police", "Station", "Mandroseza"]
+  },
+  "15": {
+    "colorClass": "grey",
+    "imgSrc": "/images/Police.jpg",
+    "title": "Tanjombato Police Post",
+    "subtitle": "Tanjombato",
+    "description": "Police post located in Antananarivo, Tanjombato. Phone: +261 38 54 321 76",
+    "tags": ["Police", "Post", "Tanjombato"]
+  }
+}

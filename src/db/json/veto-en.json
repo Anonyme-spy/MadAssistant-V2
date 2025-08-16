@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Rasoanirina",
+    "subtitle": "Analakely",
+    "description": "Veterinarian located in Antananarivo, Analakely. Phone: +261 34 12 345 01",
+    "tags": ["Veterinarian", "Analakely", "Antananarivo"]
+  },
+  "2": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Zina",
+    "subtitle": "Anosy",
+    "description": "Veterinarian located in Antananarivo, Anosy. Phone: +261 33 23 234 56",
+    "tags": ["Veterinarian", "Anosy", "Antananarivo"]
+  },
+  "3": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Mamy",
+    "subtitle": "Mahamasina",
+    "description": "Veterinarian located in Antananarivo, Mahamasina. Phone: +261 32 45 678 97",
+    "tags": ["Veterinarian", "Mahamasina", "Antananarivo"]
+  },
+  "4": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Lalao",
+    "subtitle": "Ambohimanarina",
+    "description": "Veterinarian located in Antananarivo, Ambohimanarina. Phone: +261 38 76 543 12",
+    "tags": ["Veterinarian", "Ambohimanarina", "Antananarivo"]
+  },
+  "5": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Soa",
+    "subtitle": "Itaosy",
+    "description": "Veterinarian located in Antananarivo, Itaosy. Phone: +261 34 98 765 88",
+    "tags": ["Veterinarian", "Itaosy", "Antananarivo"]
+  },
+  "6": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Hoby",
+    "subtitle": "Andavamamba",
+    "description": "Veterinarian located in Antananarivo, Andavamamba. Phone: +261 32 11 223 77",
+    "tags": ["Veterinarian", "Andavamamba", "Antananarivo"]
+  },
+  "7": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Manitra",
+    "subtitle": "Tanjombato",
+    "description": "Veterinarian located in Antananarivo, Tanjombato. Phone: +261 33 45 678 09",
+    "tags": ["Veterinarian", "Tanjombato", "Antananarivo"]
+  },
+  "8": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Vola",
+    "subtitle": "Ampefiloha",
+    "description": "Veterinarian located in Antananarivo, Ampefiloha. Phone: +261 34 22 345 55",
+    "tags": ["Veterinarian", "Ampefiloha", "Antananarivo"]
+  },
+  "9": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Noro",
+    "subtitle": "Tsaralalàna",
+    "description": "Veterinarian located in Antananarivo, Tsaralalàna. Phone: +261 38 65 432 18",
+    "tags": ["Veterinarian", "Tsaralalàna", "Antananarivo"]
+  },
+  "10": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Fara",
+    "subtitle": "Mandroseza",
+    "description": "Veterinarian located in Antananarivo, Mandroseza. Phone: +261 32 76 543 34",
+    "tags": ["Veterinarian", "Mandroseza", "Antananarivo"]
+  },
+  "11": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Tahiry",
+    "subtitle": "67Ha",
+    "description": "Veterinarian located in Antananarivo, 67Ha. Phone: +261 34 54 321 66",
+    "tags": ["Veterinarian", "67Ha", "Antananarivo"]
+  },
+  "12": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Natacha",
+    "subtitle": "Andohalo",
+    "description": "Veterinarian located in Antananarivo, Andohalo. Phone: +261 34 12 876 23",
+    "tags": ["Veterinarian", "Andohalo", "Antananarivo"]
+  },
+  "13": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Hasina",
+    "subtitle": "Ambohipotsy",
+    "description": "Veterinarian located in Antananarivo, Ambohipotsy. Phone: +261 32 45 678 99",
+    "tags": ["Veterinarian", "Ambohipotsy", "Antananarivo"]
+  },
+  "14": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Lova",
+    "subtitle": "Ankazomanga",
+    "description": "Veterinarian located in Antananarivo, Ankazomanga. Phone: +261 33 22 345 12",
+    "tags": ["Veterinarian", "Ankazomanga", "Antananarivo"]
+  },
+  "15": {
+    "colorClass": "brown",
+    "imgSrc": "/images/veterinaire.jpg",
+    "title": "Dr. Hery",
+    "subtitle": "Anjanahary",
+    "description": "Veterinarian located in Antananarivo, Anjanahary. Phone: +261 33 89 210 24",
+    "tags": ["Veterinarian", "Anjanahary", "Antananarivo"]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "1": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Malala",
+    "subtitle": "Analakely",
+    "description": "Midwife located in Antananarivo, Analakely. Phone: +261 34 12 345 01",
+    "tags": ["Midwife", "Analakely", "Antananarivo"]
+  },
+  "2": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Zina",
+    "subtitle": "Anosy",
+    "description": "Midwife located in Antananarivo, Anosy. Phone: +261 33 23 234 56",
+    "tags": ["Midwife", "Anosy", "Antananarivo"]
+  },
+  "3": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Noro",
+    "subtitle": "Mahamasina",
+    "description": "Midwife located in Antananarivo, Mahamasina. Phone: +261 32 45 678 90",
+    "tags": ["Midwife", "Mahamasina", "Antananarivo"]
+  },
+  "4": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Mamy",
+    "subtitle": "Ambohimanarina",
+    "description": "Midwife located in Antananarivo, Ambohimanarina. Phone: +261 38 76 543 21",
+    "tags": ["Midwife", "Ambohimanarina", "Antananarivo"]
+  },
+  "5": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Lalao",
+    "subtitle": "Itaosy",
+    "description": "Midwife located in Antananarivo, Itaosy. Phone: +261 34 98 765 43",
+    "tags": ["Midwife", "Itaosy", "Antananarivo"]
+  },
+  "6": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Soa",
+    "subtitle": "Andavamamba",
+    "description": "Midwife located in Antananarivo, Andavamamba. Phone: +261 32 11 223 44",
+    "tags": ["Midwife", "Andavamamba", "Antananarivo"]
+  },
+  "7": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Vola",
+    "subtitle": "Tanjombato",
+    "description": "Midwife located in Antananarivo, Tanjombato. Phone: +261 33 45 678 21",
+    "tags": ["Midwife", "Tanjombato", "Antananarivo"]
+  },
+  "8": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Manitra",
+    "subtitle": "Ampefiloha",
+    "description": "Midwife located in Antananarivo, Ampefiloha. Phone: +261 34 22 345 78",
+    "tags": ["Midwife", "Ampefiloha", "Antananarivo"]
+  },
+  "9": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Hoby",
+    "subtitle": "Tsaralalàna",
+    "description": "Midwife located in Antananarivo, Tsaralalàna. Phone: +261 38 65 432 19",
+    "tags": ["Midwife", "Tsaralalàna", "Antananarivo"]
+  },
+  "10": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Hasina",
+    "subtitle": "Mandroseza",
+    "description": "Midwife located in Antananarivo, Mandroseza. Phone: +261 32 76 543 21",
+    "tags": ["Midwife", "Mandroseza", "Antananarivo"]
+  },
+  "11": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Natacha",
+    "subtitle": "67Ha",
+    "description": "Midwife located in Antananarivo, 67Ha. Phone: +261 34 54 321 76",
+    "tags": ["Midwife", "67Ha", "Antananarivo"]
+  },
+  "12": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Lova",
+    "subtitle": "Andohalo",
+    "description": "Midwife located in Antananarivo, Andohalo. Phone: +261 34 12 876 54",
+    "tags": ["Midwife", "Andohalo", "Antananarivo"]
+  },
+  "13": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Fara",
+    "subtitle": "Ambohipotsy",
+    "description": "Midwife located in Antananarivo, Ambohipotsy. Phone: +261 32 45 678 90",
+    "tags": ["Midwife", "Ambohipotsy", "Antananarivo"]
+  },
+  "14": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Tahiry",
+    "subtitle": "Ankazomanga",
+    "description": "Midwife located in Antananarivo, Ankazomanga. Phone: +261 33 22 345 78",
+    "tags": ["Midwife", "Ankazomanga", "Antananarivo"]
+  },
+  "15": {
+    "colorClass": "orange",
+    "imgSrc": "/images/sage_femme.jpg",
+    "title": "Midwife Hery",
+    "subtitle": "Anjanahary",
+    "description": "Midwife located in Antananarivo, Anjanahary. Phone: +261 33 89 210 65",
+    "tags": ["Midwife", "Anjanahary", "Antananarivo"]
+  }
+}
